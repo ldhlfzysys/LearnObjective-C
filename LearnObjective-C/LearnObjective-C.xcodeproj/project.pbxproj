@@ -15,6 +15,7 @@
 		B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B840CF6E1D472DDE0092313E /* RunLoopViewController.m */; };
 		B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86B423A1D4243C6007F1053 /* DrawViewController.m */; };
 		B86B42441D424F49007F1053 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B86B42431D424F49007F1053 /* CoreText.framework */; };
+		DE6C59541D54783D00077DC8 /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6C59531D54783D00077DC8 /* CalendarManager.m */; };
 		DE9173C91D5344DF008A0925 /* AsyncDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */; };
 		DE9173CC1D534894008A0925 /* AsyncView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173CB1D534894008A0925 /* AsyncView.m */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,8 @@
 		B86B42391D4243C6007F1053 /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
 		B86B423A1D4243C6007F1053 /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
 		B86B42431D424F49007F1053 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DE6C59521D54783D00077DC8 /* CalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarManager.h; sourceTree = "<group>"; };
+		DE6C59531D54783D00077DC8 /* CalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarManager.m; sourceTree = "<group>"; };
 		DE9173C71D5344DF008A0925 /* AsyncDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncDrawViewController.h; sourceTree = "<group>"; };
 		DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncDrawViewController.m; sourceTree = "<group>"; };
 		DE9173CA1D534894008A0925 /* AsyncView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncView.h; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 				DE9173C61D5344BE008A0925 /* AsyncDraw */,
 				B81E2DE51D24FE7D0084DD41 /* NSPredicate */,
 				DE9173D41D54346A008A0925 /* CoreText */,
+				DE6C59511D54783000077DC8 /* Calendar */,
 				B840CF6C1D472DCC0092313E /* RunLoop */,
 				B81E2DCB1D24FDAB0084DD41 /* Products */,
 			);
@@ -122,6 +126,15 @@
 				B86B423A1D4243C6007F1053 /* DrawViewController.m */,
 			);
 			path = Draw;
+			sourceTree = "<group>";
+		};
+		DE6C59511D54783000077DC8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DE6C59521D54783D00077DC8 /* CalendarManager.h */,
+				DE6C59531D54783D00077DC8 /* CalendarManager.m */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		DE9173C61D5344BE008A0925 /* AsyncDraw */ = {
@@ -212,6 +225,7 @@
 			files = (
 				B81E2DD21D24FDAB0084DD41 /* AppDelegate.m in Sources */,
 				DE9173CC1D534894008A0925 /* AsyncView.m in Sources */,
+				DE6C59541D54783D00077DC8 /* CalendarManager.m in Sources */,
 				B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */,
 				B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */,
 				B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */,
