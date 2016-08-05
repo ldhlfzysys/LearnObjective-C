@@ -9,11 +9,18 @@
 #import "AsyncDrawViewController.h"
 
 @implementation TestAsyncDrawView
-
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.testStr = @"异步来画这句话";
+    }
+    return self;
+}
 
 -(BOOL)drawInRect:(CGRect)rect Context:(CGContextRef)context
 {
-    NSMutableAttributedString *string = [[NSMutableAttributedString alloc]initWithString:@"异步来画这句话"];
+    NSMutableAttributedString *string = [[NSMutableAttributedString alloc]initWithString:self.testStr];
     [string addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:12] range:NSMakeRange(0, string.length)];
     [string drawInRect:CGRectMake(0, 0, 100, 50)];
     sleep(2);

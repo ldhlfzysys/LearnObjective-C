@@ -10,7 +10,7 @@
 #import "AsyncView.h"
 
 @interface TestAsyncDrawView : AsyncView
-
+@property (nonatomic,strong)NSString *testStr;
 @end
 
 

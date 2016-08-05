@@ -12,7 +12,7 @@
 -(instancetype)init
 {
     if (self = [super init]) {
-        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"Operator",@"AsyncDraw", nil];
+        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw", nil];
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"LearnObjective-C";
     }
