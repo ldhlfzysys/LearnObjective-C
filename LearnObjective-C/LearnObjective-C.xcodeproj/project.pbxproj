@@ -11,7 +11,13 @@
 		B81E2DD21D24FDAB0084DD41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DD11D24FDAB0084DD41 /* AppDelegate.m */; };
 		B81E2DDA1D24FDAB0084DD41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81E2DD91D24FDAB0084DD41 /* Assets.xcassets */; };
 		B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DE71D24FEDA0084DD41 /* MainViewController.m */; };
-		B81E2DEB1D24FF7E0084DD41 /* GetNSPredicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DEA1D24FF7E0084DD41 /* GetNSPredicateViewController.m */; };
+		B81E2DEB1D24FF7E0084DD41 /* NSPredicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DEA1D24FF7E0084DD41 /* NSPredicateViewController.m */; };
+		B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B840CF6E1D472DDE0092313E /* RunLoopViewController.m */; };
+		B84AC93A1D488489006EAAD9 /* OperatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84AC9391D488489006EAAD9 /* OperatorViewController.m */; };
+		B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86B423A1D4243C6007F1053 /* DrawViewController.m */; };
+		B86B42441D424F49007F1053 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B86B42431D424F49007F1053 /* CoreText.framework */; };
+		DE9173C91D5344DF008A0925 /* AsyncDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */; };
+		DE9173CC1D534894008A0925 /* AsyncView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173CB1D534894008A0925 /* AsyncView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +29,19 @@
 		B81E2DDE1D24FDAB0084DD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B81E2DE61D24FEDA0084DD41 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B81E2DE71D24FEDA0084DD41 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		B81E2DE91D24FF7E0084DD41 /* GetNSPredicateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetNSPredicateViewController.h; sourceTree = "<group>"; };
-		B81E2DEA1D24FF7E0084DD41 /* GetNSPredicateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetNSPredicateViewController.m; sourceTree = "<group>"; };
+		B81E2DE91D24FF7E0084DD41 /* NSPredicateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPredicateViewController.h; sourceTree = "<group>"; };
+		B81E2DEA1D24FF7E0084DD41 /* NSPredicateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSPredicateViewController.m; sourceTree = "<group>"; };
+		B840CF6D1D472DDE0092313E /* RunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
+		B840CF6E1D472DDE0092313E /* RunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
+		B84AC9381D488489006EAAD9 /* OperatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorViewController.h; sourceTree = "<group>"; };
+		B84AC9391D488489006EAAD9 /* OperatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorViewController.m; sourceTree = "<group>"; };
+		B86B42391D4243C6007F1053 /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
+		B86B423A1D4243C6007F1053 /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
+		B86B42431D424F49007F1053 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DE9173C71D5344DF008A0925 /* AsyncDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncDrawViewController.h; sourceTree = "<group>"; };
+		DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncDrawViewController.m; sourceTree = "<group>"; };
+		DE9173CA1D534894008A0925 /* AsyncView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncView.h; sourceTree = "<group>"; };
+		DE9173CB1D534894008A0925 /* AsyncView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86B42441D424F49007F1053 /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +59,13 @@
 		B81E2DC11D24FDAB0084DD41 = {
 			isa = PBXGroup;
 			children = (
+				B86B42431D424F49007F1053 /* CoreText.framework */,
 				B81E2DCC1D24FDAB0084DD41 /* LearnObjective-C */,
+				B86B42381D4243B9007F1053 /* Draw */,
+				DE9173C61D5344BE008A0925 /* AsyncDraw */,
 				B81E2DE51D24FE7D0084DD41 /* NSPredicate */,
+				B840CF6C1D472DCC0092313E /* RunLoop */,
+				B84AC9371D488477006EAAD9 /* Operator */,
 				B81E2DCB1D24FDAB0084DD41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,10 +103,48 @@
 		B81E2DE51D24FE7D0084DD41 /* NSPredicate */ = {
 			isa = PBXGroup;
 			children = (
-				B81E2DE91D24FF7E0084DD41 /* GetNSPredicateViewController.h */,
-				B81E2DEA1D24FF7E0084DD41 /* GetNSPredicateViewController.m */,
+				B81E2DE91D24FF7E0084DD41 /* NSPredicateViewController.h */,
+				B81E2DEA1D24FF7E0084DD41 /* NSPredicateViewController.m */,
 			);
 			path = NSPredicate;
+			sourceTree = "<group>";
+		};
+		B840CF6C1D472DCC0092313E /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				B840CF6D1D472DDE0092313E /* RunLoopViewController.h */,
+				B840CF6E1D472DDE0092313E /* RunLoopViewController.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		B84AC9371D488477006EAAD9 /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				B84AC9381D488489006EAAD9 /* OperatorViewController.h */,
+				B84AC9391D488489006EAAD9 /* OperatorViewController.m */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
+		B86B42381D4243B9007F1053 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				B86B42391D4243C6007F1053 /* DrawViewController.h */,
+				B86B423A1D4243C6007F1053 /* DrawViewController.m */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		DE9173C61D5344BE008A0925 /* AsyncDraw */ = {
+			isa = PBXGroup;
+			children = (
+				DE9173CA1D534894008A0925 /* AsyncView.h */,
+				DE9173CB1D534894008A0925 /* AsyncView.m */,
+				DE9173C71D5344DF008A0925 /* AsyncDrawViewController.h */,
+				DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */,
+			);
+			path = AsyncDraw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +216,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B81E2DD21D24FDAB0084DD41 /* AppDelegate.m in Sources */,
+				DE9173CC1D534894008A0925 /* AsyncView.m in Sources */,
+				B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */,
+				B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */,
 				B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */,
-				B81E2DEB1D24FF7E0084DD41 /* GetNSPredicateViewController.m in Sources */,
+				B81E2DEB1D24FF7E0084DD41 /* NSPredicateViewController.m in Sources */,
+				B84AC93A1D488489006EAAD9 /* OperatorViewController.m in Sources */,
 				B81E2DCF1D24FDAB0084DD41 /* main.m in Sources */,
+				DE9173C91D5344DF008A0925 /* AsyncDrawViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

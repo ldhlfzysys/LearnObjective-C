@@ -12,7 +12,7 @@
 -(instancetype)init
 {
     if (self = [super init]) {
-        mControllers = [NSArray arrayWithObjects:@"NSPredicate", nil];
+        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"Operator",@"AsyncDraw", nil];
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"LearnObjective-C";
     }
@@ -37,7 +37,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSMutableString *viewControllerName = [[mControllers objectAtIndex:indexPath.row] mutableCopy];
-    [viewControllerName insertString:@"Get" atIndex:0];
+//    [viewControllerName insertString:@"Get" atIndex:0];
     [viewControllerName appendString:@"ViewController"];
     UIViewController *sessionVC = [[NSClassFromString(viewControllerName) alloc]init];
     [sessionVC setTitle:viewControllerName];
