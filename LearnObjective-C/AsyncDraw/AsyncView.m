@@ -15,8 +15,30 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.dispatchPriority = DISPATCH_QUEUE_PRIORITY_DEFAULT;
+        self.opaque = NO;
+        self.layer.contentsScale = [[UIScreen mainScreen] scale];
     }
     return self;
+}
+
+- (void)didMoveToWindow
+{
+    [super didMoveToWindow];
+    
+    if (!self.window)
+    {
+        // 没有 Window 说明View已经没有显示在界面上，此时应该终止绘制
+        
+    }
+    else if (!self.layer.contents)
+    {
+        [self setNeedsDisplay];
+    }
+}
+
+- (void)setNeedsDisplay
+{
+    [self.layer setNeedsDisplay];
 }
 
 - (dispatch_queue_t)drawQueue

@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "AsyncView.h"
 
-@interface AsyncDrawViewController : UIViewController
+@interface TestAsyncDrawView : AsyncView
 
+@end
+
+
+
+@interface AsyncDrawViewController : UITableViewController
 
 @end

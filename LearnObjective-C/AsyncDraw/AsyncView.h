@@ -14,4 +14,7 @@
 
 /// 异步绘制时global queue的优先级，默认优先级为DEFAULT。在设置了drawQueue时此参数无效。
 @property (nonatomic, assign) dispatch_queue_priority_t dispatchPriority;
+
+- (BOOL)drawInRect:(CGRect)rect Context:(CGContextRef)context;
+
 @end

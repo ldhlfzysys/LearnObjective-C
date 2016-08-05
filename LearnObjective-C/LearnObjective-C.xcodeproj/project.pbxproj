@@ -64,6 +64,7 @@
 				B86B42381D4243B9007F1053 /* Draw */,
 				DE9173C61D5344BE008A0925 /* AsyncDraw */,
 				B81E2DE51D24FE7D0084DD41 /* NSPredicate */,
+				DE9173D41D54346A008A0925 /* CoreText */,
 				B840CF6C1D472DCC0092313E /* RunLoop */,
 				B84AC9371D488477006EAAD9 /* Operator */,
 				B81E2DCB1D24FDAB0084DD41 /* Products */,
@@ -145,6 +146,13 @@
 				DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */,
 			);
 			path = AsyncDraw;
+			sourceTree = "<group>";
+		};
+		DE9173D41D54346A008A0925 /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreText;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
