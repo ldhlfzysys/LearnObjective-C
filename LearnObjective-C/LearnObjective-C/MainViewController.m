@@ -8,13 +8,19 @@
 
 #import "MainViewController.h"
 
+@interface MainViewController()
+@property (nonatomic,assign)id obj2;
+
+@end
+
 @implementation MainViewController
 -(instancetype)init
 {
     if (self = [super init]) {
-        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw", nil];
+        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread", nil];
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"LearnObjective-C";
+
     }
     return self;
 }
