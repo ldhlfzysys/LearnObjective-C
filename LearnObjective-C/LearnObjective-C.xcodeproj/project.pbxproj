@@ -10,11 +10,12 @@
 		B81E2DCF1D24FDAB0084DD41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DCE1D24FDAB0084DD41 /* main.m */; };
 		B81E2DD21D24FDAB0084DD41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DD11D24FDAB0084DD41 /* AppDelegate.m */; };
 		B81E2DDA1D24FDAB0084DD41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81E2DD91D24FDAB0084DD41 /* Assets.xcassets */; };
-		B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DE71D24FEDA0084DD41 /* MainViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DE71D24FEDA0084DD41 /* MainViewController.m */; };
 		B81E2DEB1D24FF7E0084DD41 /* NSPredicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DEA1D24FF7E0084DD41 /* NSPredicateViewController.m */; };
 		B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B840CF6E1D472DDE0092313E /* RunLoopViewController.m */; };
 		B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86B423A1D4243C6007F1053 /* DrawViewController.m */; };
 		B86B42441D424F49007F1053 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B86B42431D424F49007F1053 /* CoreText.framework */; };
+		DE4DF8DF1D66DA9000A6AB11 /* FPSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4DF8DE1D66DA9000A6AB11 /* FPSObject.m */; };
 		DE58A2441D5984A600F78879 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE58A2431D5984A600F78879 /* ThreadViewController.m */; };
 		DE9173C91D5344DF008A0925 /* AsyncDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */; };
 		DE9173CC1D534894008A0925 /* AsyncView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173CB1D534894008A0925 /* AsyncView.m */; };
@@ -36,6 +37,8 @@
 		B86B42391D4243C6007F1053 /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
 		B86B423A1D4243C6007F1053 /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
 		B86B42431D424F49007F1053 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DE4DF8DD1D66DA9000A6AB11 /* FPSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSObject.h; sourceTree = "<group>"; };
+		DE4DF8DE1D66DA9000A6AB11 /* FPSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSObject.m; sourceTree = "<group>"; };
 		DE58A2421D5984A600F78879 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		DE58A2431D5984A600F78879 /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		DE9173C71D5344DF008A0925 /* AsyncDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncDrawViewController.h; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 				DE6C59551D547FD200077DC8 /* Category */,
 				DE6C59561D54802800077DC8 /* DataBase */,
 				DE6C59571D54805600077DC8 /* AttributeText */,
+				DE4DF8DC1D66D93800A6AB11 /* FPS */,
 				B840CF6C1D472DCC0092313E /* RunLoop */,
 				B81E2DCB1D24FDAB0084DD41 /* Products */,
 			);
@@ -129,6 +133,15 @@
 				B86B423A1D4243C6007F1053 /* DrawViewController.m */,
 			);
 			path = Draw;
+			sourceTree = "<group>";
+		};
+		DE4DF8DC1D66D93800A6AB11 /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				DE4DF8DD1D66DA9000A6AB11 /* FPSObject.h */,
+				DE4DF8DE1D66DA9000A6AB11 /* FPSObject.m */,
+			);
+			path = FPS;
 			sourceTree = "<group>";
 		};
 		DE58A2411D59849900F78879 /* Thread */ = {
@@ -253,6 +266,7 @@
 				B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */,
 				B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */,
 				B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */,
+				DE4DF8DF1D66DA9000A6AB11 /* FPSObject.m in Sources */,
 				B81E2DEB1D24FF7E0084DD41 /* NSPredicateViewController.m in Sources */,
 				B81E2DCF1D24FDAB0084DD41 /* main.m in Sources */,
 				DE9173C91D5344DF008A0925 /* AsyncDrawViewController.m in Sources */,

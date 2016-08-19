@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "FPSObject.h"
 
 @interface MainViewController()
 @property (nonatomic,assign)id obj2;
@@ -20,7 +21,7 @@
         mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread", nil];
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"LearnObjective-C";
-
+        FPSObject *obj = [[FPSObject alloc]init];
     }
     return self;
 }
