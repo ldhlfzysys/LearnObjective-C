@@ -19,6 +19,8 @@
 		DE58A2441D5984A600F78879 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE58A2431D5984A600F78879 /* ThreadViewController.m */; };
 		DE9173C91D5344DF008A0925 /* AsyncDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */; };
 		DE9173CC1D534894008A0925 /* AsyncView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173CB1D534894008A0925 /* AsyncView.m */; };
+		DEBD20681D6AD03D0084AEBC /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBD20671D6AD03D0084AEBC /* BaseModel.m */; };
+		DEBD206B1D6AD3360084AEBC /* testModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBD206A1D6AD3360084AEBC /* testModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,10 @@
 		DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncDrawViewController.m; sourceTree = "<group>"; };
 		DE9173CA1D534894008A0925 /* AsyncView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncView.h; sourceTree = "<group>"; };
 		DE9173CB1D534894008A0925 /* AsyncView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncView.m; sourceTree = "<group>"; };
+		DEBD20661D6AD03D0084AEBC /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		DEBD20671D6AD03D0084AEBC /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		DEBD20691D6AD3360084AEBC /* testModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testModel.h; sourceTree = "<group>"; };
+		DEBD206A1D6AD3360084AEBC /* testModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 				DE6C59551D547FD200077DC8 /* Category */,
 				DE6C59561D54802800077DC8 /* DataBase */,
 				DE6C59571D54805600077DC8 /* AttributeText */,
+				DEBD20651D6AD02E0084AEBC /* BaseModel */,
 				DE4DF8DC1D66D93800A6AB11 /* FPS */,
 				B840CF6C1D472DCC0092313E /* RunLoop */,
 				B81E2DCB1D24FDAB0084DD41 /* Products */,
@@ -192,6 +199,17 @@
 			path = CoreText;
 			sourceTree = "<group>";
 		};
+		DEBD20651D6AD02E0084AEBC /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD20661D6AD03D0084AEBC /* BaseModel.h */,
+				DEBD20671D6AD03D0084AEBC /* BaseModel.m */,
+				DEBD20691D6AD3360084AEBC /* testModel.h */,
+				DEBD206A1D6AD3360084AEBC /* testModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +281,8 @@
 				B81E2DD21D24FDAB0084DD41 /* AppDelegate.m in Sources */,
 				DE9173CC1D534894008A0925 /* AsyncView.m in Sources */,
 				DE58A2441D5984A600F78879 /* ThreadViewController.m in Sources */,
+				DEBD206B1D6AD3360084AEBC /* testModel.m in Sources */,
+				DEBD20681D6AD03D0084AEBC /* BaseModel.m in Sources */,
 				B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */,
 				B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */,
 				B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */,
