@@ -1,0 +1,267 @@
+ [
+  {
+  "net_time": 1402,
+  "groupid": 100013074350845,
+  "during_time": 2342,
+  "result_code": 0,
+  "load_type": 1,
+  "parseTime": 444,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 521,
+  "groupid": 100013074350845,
+  "during_time": 1337,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 429,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 493,
+  "groupid": 100013074350845,
+  "during_time": 1086,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 320,
+  "feed_type": 1,
+  "netDataCount": 26
+  },
+  {
+  "net_time": 515,
+  "groupid": 100013074350845,
+  "during_time": 1365,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 516,
+  "feed_type": 1,
+  "netDataCount": 26
+  },
+  {
+  "net_time": 408,
+  "groupid": 100013074350845,
+  "during_time": 816,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 162,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 571,
+  "groupid": 100013074350845,
+  "during_time": 1445,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 518,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 521,
+  "groupid": 100013074350845,
+  "during_time": 1042,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 340,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 371,
+  "groupid": 100013074350845,
+  "during_time": 861,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 344,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 475,
+  "groupid": 100013074350845,
+  "during_time": 791,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 194,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 311,
+  "groupid": 100013074350845,
+  "during_time": 666,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 115,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 484,
+  "groupid": 100013074350845,
+  "during_time": 1023,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 352,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 400,
+  "groupid": 100013074350845,
+  "during_time": 858,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 204,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 416,
+  "groupid": 100013074350845,
+  "during_time": 708,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 161,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 286,
+  "groupid": 100013074350845,
+  "during_time": 642,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 171,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 363,
+  "groupid": 100013074350845,
+  "during_time": 906,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 278,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 391,
+  "groupid": 100013074350845,
+  "during_time": 766,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 143,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 476,
+  "groupid": 100013074350845,
+  "during_time": 740,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 153,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 694,
+  "groupid": 100013074350845,
+  "during_time": 1090,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 279,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 330,
+  "groupid": 100013074350845,
+  "during_time": 655,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 176,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 287,
+  "groupid": 100013074350845,
+  "during_time": 666,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 283,
+  "feed_type": 1,
+  "netDataCount": 25
+  },
+  {
+  "net_time": 409,
+  "groupid": 100013074350845,
+  "during_time": 751,
+  "result_code": 0,
+  "load_type": 2,
+  "parseTime": 133,
+  "feed_type": 1,
+  "netDataCount": 24
+  },
+  {
+  "net_time": 216,
+  "groupid": 100013074350845,
+  "during_time": 589,
+  "result_code": 0,
+  "load_type": 1,
+  "parseTime": 28,
+  "feed_type": 1,
+  "netDataCount": 2
+  },
+  {
+  "groupid": 100013074350845,
+  "during_time": 1508,
+  "result_code": 0,
+  "localDataCount": 25,
+  "readDataTime": 1361,
+  "load_type": 2,
+  "feed_type": 1
+  },
+  {
+  "groupid": 100013074350845,
+  "during_time": 1244,
+  "result_code": 0,
+  "localDataCount": 25,
+  "readDataTime": 1132,
+  "load_type": 2,
+  "feed_type": 1
+  },
+  {
+  "groupid": 100013074350845,
+  "during_time": 1123,
+  "result_code": 0,
+  "localDataCount": 25,
+  "readDataTime": 1045,
+  "load_type": 2,
+  "feed_type": 1
+  },
+  {
+  "groupid": 100013074350845,
+  "during_time": 869,
+  "result_code": 0,
+  "localDataCount": 25,
+  "readDataTime": 803,
+  "load_type": 2,
+  "feed_type": 1
+  },
+  {
+  "groupid": 100013074350845,
+  "during_time": 976,
+  "result_code": 0,
+  "localDataCount": 25,
+  "readDataTime": 910,
+  "load_type": 2,
+  "feed_type": 1
+  }
+  ]

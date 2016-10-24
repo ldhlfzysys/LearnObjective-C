@@ -28,6 +28,10 @@
     
     //用于记录上一次的时间戳
     CFTimeInterval lastTimeStamp;
+    
+    //
+    NSInteger currentSeconds;
+    NSInteger currentCount;
 }
 @end
 
@@ -59,31 +63,52 @@
  */
 - (void)update:(CADisplayLink *)timer
 {
-    for (int i = fpsBufferSize - 1; i > 0; i--) {
-        fpsBuffer[i] = fpsBuffer[i-1];
-    }
-    fpsBuffer[0] = timer.timestamp - lastTimeStamp;
-    lastTimeStamp = timer.timestamp;
-    
-    double maxTime = 0;
-    double averTimeSum = 0;
-    double averTime = 0;
-    
-    for (int i = 0; i < fpsBufferSize; i++)
+//    for (int i = fpsBufferSize - 1; i > 0; i--) {
+//        fpsBuffer[i] = fpsBuffer[i-1];
+//    }
+//    fpsBuffer[0] = timer.timestamp - lastTimeStamp;
+//    lastTimeStamp = timer.timestamp;
+//    
+//    double maxTime = 0;
+//    double averTimeSum = 0;
+//    double averTime = 0;
+//    
+//    for (int i = 0; i < fpsBufferSize; i++)
+//    {
+//        maxTime = MAX(fpsBuffer[i],maxTime);
+//        averTimeSum += fpsBuffer[i];
+//    }
+//    
+//    averTime = averTimeSum / fpsBufferSize;
+//    
+//    refreshCounter ++;
+//
+//    if (refreshCounter%refreshSeconds == 0) {
+//        refreshCounter = 0;
+//        NSLog(@"current:%.1f---aver:%.1f",roundf(1.f/maxTime),round(1.f/averTime));
+//        
+//    }
+
+    //按进入次数算
+//    CFAbsoluteTime time1 = CFAbsoluteTimeGetCurrent();
+//    
+    NSInteger intStamp = timer.timestamp;
+    if (intStamp == currentSeconds)
     {
-        maxTime = MAX(fpsBuffer[i],maxTime);
-        averTimeSum += fpsBuffer[i];
+        currentCount ++;
     }
-    
-    averTime = averTimeSum / fpsBufferSize;
-    
-    refreshCounter ++;
-    
-    if (refreshCounter%refreshSeconds == 0) {
-        refreshCounter = 0;
-        NSLog(@"current:%.1f---aver:%.1f",roundf(1.f/maxTime),round(1.f/averTime));
-        
+    else
+    {
+        //第一次进入没记，所有最后结果+1
+        NSLog(@"%ld",currentCount+1);
+        currentCount = 0;
+        currentSeconds = timer.timestamp;
     }
+//
+    
+//    CFAbsoluteTime time2 = CFAbsoluteTimeGetCurrent();
+//    NSLog(@"%f--%f",time1,time2);
+    
     
     
     

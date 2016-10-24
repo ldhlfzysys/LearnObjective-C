@@ -9,6 +9,11 @@
 #import "MainViewController.h"
 #import "FPSObject.h"
 #import "testModel.h"
+
+#include <libkern/OSAtomic.h>
+#include <execinfo.h>
+
+
 @interface MainViewController()
 @property (nonatomic,assign)id obj2;
 
@@ -18,14 +23,17 @@
 -(instancetype)init
 {
     if (self = [super init]) {
-        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread", nil];
+        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll", nil];
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"LearnObjective-C";
-//        FPSObject *obj = [[FPSObject alloc]init];
-        testModel *d = [[testModel alloc]init];
+
+        
+
     }
     return self;
 }
+
+
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
