@@ -8,6 +8,9 @@
 
 #import "MyScrollViewController.h"
 #import "NSPredicateViewController.h"
+
+
+
 @interface MyScrollViewController ()
 
 @end
@@ -17,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+        [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:150  inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,43 +29,61 @@
 }
 #pragma mark - scrollviewdelegate
 
-
-
-
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView;
+- (void)viewWillDisappear:(BOOL)animated
 {
-    NSLog(@"scrollViewWillBeginDragging-decelerate-%@",scrollView.isDecelerating?@"yes":@"no");
+    NSLog(@"viewWillDisappear");
 }
 
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate;
+- (void)viewDidAppear:(BOOL)animated
 {
-    NSLog(@"scrollViewDidEndDragging-decelerate-%@",decelerate?@"yes":@"no");
+    NSLog(@"viewDidAppear");
 }
 
-- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView;
+- (void)viewWillAppear:(BOOL)animated
 {
-    NSLog(@"scrollViewWillBeginDecelerating-decelerate-%@",scrollView.isDecelerating?@"yes":@"no");
+    NSLog(@"viewWillAppear");
 }
 
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
+- (void)viewDidDisappear:(BOOL)animated
 {
-    NSLog(@"scrollViewDidEndDecelerating-decelerate-%@",scrollView.isDecelerating?@"yes":@"no");
+    NSLog(@"viewDidDisappear");
 }
 
-- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView;
-{
-    NSLog(@"scrollViewDidEndScrollingAnimation");
-}
-
-- (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView
-{
-    NSLog(@"scrollViewDidScrollToTop");
-}
+//
+//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView;
+//{
+//    NSLog(@"scrollViewWillBeginDragging-decelerate-%@",scrollView.isDecelerating?@"yes":@"no");
+//}
+//
+//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate;
+//{
+//    NSLog(@"scrollViewDidEndDragging-decelerate-%@",decelerate?@"yes":@"no");
+//}
+//
+//- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView;
+//{
+//    NSLog(@"scrollViewWillBeginDecelerating-decelerate-%@",scrollView.isDecelerating?@"yes":@"no");
+//}
+//
+//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
+//{
+//    NSLog(@"scrollViewDidEndDecelerating-decelerate-%@",scrollView.isDecelerating?@"yes":@"no");
+//}
+//
+//- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView;
+//{
+//    NSLog(@"scrollViewDidEndScrollingAnimation");
+//}
+//
+//- (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView
+//{
+//    NSLog(@"scrollViewDidScrollToTop");
+//}
 
 #pragma mark - tableviewdelegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 200;
+    return 300;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -74,10 +96,16 @@
     NSLog(@"enddisplay---%ld",(long)indexPath.row);
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+}
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSPredicateViewController *test = [[NSPredicateViewController alloc]init];
+    MyScrollViewController *test = [[MyScrollViewController alloc]init];
     [self.navigationController pushViewController:test animated:YES];
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

@@ -11,7 +11,7 @@
 @interface SemaphoreViewController()
 {
     dispatch_semaphore_t signal;
-    UIButton *signalButton;
+    
 }
 
 @end
@@ -23,22 +23,41 @@
     self = [super init];
     if (self) {
         self.view.backgroundColor = [UIColor whiteColor];
-        signalButton = [[UIButton alloc]initWithFrame:CGRectMake(50, 150, 100, 50)];
-        signalButton.backgroundColor = [UIColor blueColor];
-        [signalButton addTarget:self action:@selector(releaseSignal) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:signalButton];
         
         signal = dispatch_semaphore_create(1);
         
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            while (YES) {
-                dispatch_semaphore_wait(signal, 500000*NSEC_PER_SEC);
-                NSLog(@"click");
-                
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            while (1) {
+                dispatch_semaphore_wait(signal, DISPATCH_TIME_FOREVER);
+                [self test:@"a"];
+                dispatch_semaphore_signal(signal);
             }
         });
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            while (1) {
+                dispatch_semaphore_wait(signal, DISPATCH_TIME_FOREVER);
+                [self test:@"a"];
+                dispatch_semaphore_signal(signal);
+            }
+        });
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            while (1) {
+                dispatch_semaphore_wait(signal, DISPATCH_TIME_FOREVER);
+                [self test:@"a"];
+                dispatch_semaphore_signal(signal);
+            }
+        });
+
     }
     return self;
+}
+
+- (void)test:(NSString *)str
+{
+    sleep(2);
+    NSLog(@"%p",&str);
 }
 
 - (void)releaseSignal
