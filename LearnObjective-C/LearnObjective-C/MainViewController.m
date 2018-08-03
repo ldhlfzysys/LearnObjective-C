@@ -12,47 +12,129 @@
 
 #include <libkern/OSAtomic.h>
 #include <execinfo.h>
+#import "ExternTest.h"
+#import <objc/runtime.h>
 
+#define kWBUserDefaultsKey  @"kWBUserDefaultsKey"
+extern int ctest();
+static dispatch_queue_t wb_user_defaults_queue;
+static dispatch_queue_t test_queue;
 
-@interface MainViewController()
-{
-//    double test1;
-//    double test2;
-//    double test3;
+@interface MainViewController(){
+    
 }
-@property (nonatomic,assign)id obj2;
+
 @property (nonatomic,strong) NSMutableArray *arr;
+@property (nonatomic,assign) NSInteger testcount;
+@property (nonatomic,strong)NSTimer *timer;
 @end
 
+static dispatch_queue_t mqueue;
+
 @implementation MainViewController
+
+@synthesize testcount = _testcount;
+
+
+
 -(instancetype)init
 {
     if (self = [super init]) {
-        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol", nil];
+        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol",@"JSCore",@"NSString", nil];
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"LearnObjective-C";
-        
-        
-        double time1 = CFAbsoluteTimeGetCurrent();
-        
-        for (int i = 0; i < 10*100*100*1000; i ++) {
-            NSNumber *test1 = @(123.1231231);
-           NSNumber *test2 = @(333.4563456);
-           double test3 = [test2 doubleValue] - [test1 doubleValue];
-        }
-        
-        double time2 = CFAbsoluteTimeGetCurrent();
-        
-        NSLog(@"%f",time2-time1);
-
-        
-
+    
         
     }
     return self;
 }
+- (void)test{
+    NSLog(@"aaaaa");
+}
 
 
+//动态方法解析
++ (BOOL)resolveInstanceMethod:(SEL)sel
+{
+    if ([NSStringFromSelector(sel) isEqualToString:@"test"]) {
+        NSLog(@"%@ not found",NSStringFromSelector(sel));
+        return NO;
+    }else{
+        return [super resolveInstanceMethod:sel];
+    }
+    
+}
+
++ (BOOL)resolveClassMethod:(SEL)sel
+{
+    if ([NSStringFromSelector(sel) isEqualToString:@"test"]) {
+        NSLog(@"%@ not found",NSStringFromSelector(sel));
+        return NO;
+    }else{
+        return [super resolveInstanceMethod:sel];
+    }
+}
+
+//备用接收者
+- (id)forwardingTargetForSelector:(SEL)aSelector{
+    NSLog(@"%@ not found",NSStringFromSelector(aSelector));
+    return nil;
+}
+
++ (id)forwardingTargetForSelector:(SEL)aSelector{
+    NSLog(@"%@ not found",NSStringFromSelector(aSelector));
+    return nil;
+}
+
+//完整消息转发
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    if ([NSStringFromSelector(aSelector) isEqualToString:@"test"]) {
+        NSMethodSignature *sign = [NSMethodSignature signatureWithObjCTypes:"v@:"];
+        return sign;//签名，进入forwardInvocation
+    }
+    
+    return [super methodSignatureForSelector:aSelector];
+}
++ (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    if ([NSStringFromSelector(aSelector) isEqualToString:@"test"]) {
+        NSMethodSignature *sign = [NSMethodSignature signatureWithObjCTypes:"v#:"];
+        return sign;//签名，进入forwardInvocation
+    }
+    
+    return [super methodSignatureForSelector:aSelector];
+}
+
+//完整消息转发
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    SEL sel = anInvocation.selector;
+    
+    ExternTest *p = [ExternTest new];
+    if([p respondsToSelector:sel]) {
+        [anInvocation invokeWithTarget:p];
+    }
+    else {
+        [self doesNotRecognizeSelector:sel];
+    }
+    
+}
++ (void)forwardInvocation:(NSInvocation *)anInvocation {
+    SEL sel = anInvocation.selector;
+    
+    ExternTest *p = [ExternTest new];
+    if([p respondsToSelector:sel]) {
+        [anInvocation invokeWithTarget:p];
+    }
+    else {
+        [self doesNotRecognizeSelector:sel];
+    }
+    
+}
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+//    NSLog(@"%f",scrollView.contentOffset.y);
+}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -71,7 +153,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+//    NSLog(@"%ld",self.testcount);
     NSMutableString *viewControllerName = [[mControllers objectAtIndex:indexPath.row] mutableCopy];
 //    [viewControllerName insertString:@"Get" atIndex:0];
     [viewControllerName appendString:@"ViewController"];
@@ -79,14 +161,5 @@
     [sessionVC setTitle:viewControllerName];
     [self.navigationController pushViewController:sessionVC animated:YES];
 
-//    for (int i = 0; i < 100; i ++) {
-//        NSDictionary *dict3 = [[NSDictionary alloc]initWithObjectsAndKeys:@"123123",@"cddddfadsfasdf",
-//                               @"3123123",@"asdcasdcasdcasdc",
-//                               @"da123as",@"asdcasdcxacdad",
-//                               @"123aese",@"casdcxacds",
-//                               @"12awe",@"casdcaxacd",
-//                               @"123aedqwe",@"asdcaxcadc",nil];
-//        [_arr addObject:dict3];
-//    }
 }
 @end

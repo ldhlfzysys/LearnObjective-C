@@ -8,6 +8,8 @@
 
 #import "testModel.h"
 
+//NSString* const DHTEST = @"aaaa";
+
 @implementation testModel
 
 @end

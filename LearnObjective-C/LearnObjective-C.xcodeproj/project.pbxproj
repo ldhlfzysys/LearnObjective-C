@@ -24,12 +24,17 @@
 		DE514A451DD2FF8400D01983 /* ProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE514A441DD2FF8400D01983 /* ProtocolViewController.m */; };
 		DE514A481DD3009300D01983 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DE514A471DD3009300D01983 /* MyObject.m */; };
 		DE58A2441D5984A600F78879 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE58A2431D5984A600F78879 /* ThreadViewController.m */; };
+		DE6157B12112F34E006CF725 /* JSCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6157B02112F34E006CF725 /* JSCoreViewController.m */; };
+		DE6157B42112F3A1006CF725 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6157B32112F3A1006CF725 /* JavaScriptCore.framework */; };
+		DE6157B721130268006CF725 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = DE6157B621130268006CF725 /* index.html */; };
+		DE6157BB21132404006CF725 /* NSStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6157BA21132404006CF725 /* NSStringViewController.m */; };
 		DE624B011D9A5991006C4B94 /* analysisdata.json in Resources */ = {isa = PBXBuildFile; fileRef = DE624B001D9A5991006C4B94 /* analysisdata.json */; };
 		DE624B0F1D9BCEE5006C4B94 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE624B0E1D9BCEE5006C4B94 /* CoreTextViewController.m */; };
 		DE624B201D9CF9C1006C4B94 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = DE624B1F1D9CF9C1006C4B94 /* test.png */; };
 		DE8DD8251D9E07D40076821F /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = DE8DD8241D9E07D40076821F /* test1.png */; };
 		DE9173C91D5344DF008A0925 /* AsyncDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */; };
 		DE9173CC1D534894008A0925 /* AsyncView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173CB1D534894008A0925 /* AsyncView.m */; };
+		DE979C0620EB68A10048EE29 /* ExternTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE979C0520EB68A10048EE29 /* ExternTest.m */; };
 		DEBAD0621DAF516A0006CA28 /* MyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBAD0611DAF516A0006CA28 /* MyScrollViewController.m */; };
 		DEBD20681D6AD03D0084AEBC /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBD20671D6AD03D0084AEBC /* BaseModel.m */; };
 		DEBD206B1D6AD3360084AEBC /* testModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBD206A1D6AD3360084AEBC /* testModel.m */; };
@@ -69,6 +74,12 @@
 		DE514A471DD3009300D01983 /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
 		DE58A2421D5984A600F78879 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		DE58A2431D5984A600F78879 /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		DE6157AF2112F34E006CF725 /* JSCoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCoreViewController.h; sourceTree = "<group>"; };
+		DE6157B02112F34E006CF725 /* JSCoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCoreViewController.m; sourceTree = "<group>"; };
+		DE6157B32112F3A1006CF725 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		DE6157B621130268006CF725 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		DE6157B921132404006CF725 /* NSStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringViewController.h; sourceTree = "<group>"; };
+		DE6157BA21132404006CF725 /* NSStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringViewController.m; sourceTree = "<group>"; };
 		DE624B001D9A5991006C4B94 /* analysisdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = analysisdata.json; sourceTree = "<group>"; };
 		DE624B0D1D9BCEE5006C4B94 /* CoreTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextViewController.h; sourceTree = "<group>"; };
 		DE624B0E1D9BCEE5006C4B94 /* CoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextViewController.m; sourceTree = "<group>"; };
@@ -78,6 +89,8 @@
 		DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncDrawViewController.m; sourceTree = "<group>"; };
 		DE9173CA1D534894008A0925 /* AsyncView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncView.h; sourceTree = "<group>"; };
 		DE9173CB1D534894008A0925 /* AsyncView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncView.m; sourceTree = "<group>"; };
+		DE979C0420EB68A10048EE29 /* ExternTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternTest.h; sourceTree = "<group>"; };
+		DE979C0520EB68A10048EE29 /* ExternTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExternTest.m; sourceTree = "<group>"; };
 		DEBAD0601DAF516A0006CA28 /* MyScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollViewController.h; sourceTree = "<group>"; };
 		DEBAD0611DAF516A0006CA28 /* MyScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollViewController.m; sourceTree = "<group>"; };
 		DEBD20661D6AD03D0084AEBC /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -93,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6157B42112F3A1006CF725 /* JavaScriptCore.framework in Frameworks */,
 				B86B42441D424F49007F1053 /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,20 +121,20 @@
 				B81E2DCC1D24FDAB0084DD41 /* LearnObjective-C */,
 				DE58A2411D59849900F78879 /* Thread */,
 				B86B42381D4243B9007F1053 /* Draw */,
+				DE6157B8211323F1006CF725 /* NSString */,
 				DEDE65641D922AD7005BE223 /* semaphore */,
+				DE6157AE2112F33C006CF725 /* JSCore */,
 				DE9173C61D5344BE008A0925 /* AsyncDraw */,
 				B81E2DE51D24FE7D0084DD41 /* NSPredicate */,
 				DE9173D41D54346A008A0925 /* CoreText */,
-				DE6C59551D547FD200077DC8 /* Category */,
-				DE6C59561D54802800077DC8 /* DataBase */,
 				DEBAD05F1DAF514F0006CA28 /* ScrollView */,
-				DE6C59571D54805600077DC8 /* AttributeText */,
 				DE1BC33B1D8146EF007E7FA2 /* Design */,
 				DE2AC4B51D99132E00A38F93 /* feedperforms */,
 				DEBD20651D6AD02E0084AEBC /* BaseModel */,
 				DE4DF8DC1D66D93800A6AB11 /* FPS */,
 				B840CF6C1D472DCC0092313E /* RunLoop */,
 				B81E2DCB1D24FDAB0084DD41 /* Products */,
+				DE6157B22112F3A1006CF725 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +157,8 @@
 				B81E2DD91D24FDAB0084DD41 /* Assets.xcassets */,
 				B81E2DDE1D24FDAB0084DD41 /* Info.plist */,
 				B81E2DCD1D24FDAB0084DD41 /* Supporting Files */,
+				DE979C0420EB68A10048EE29 /* ExternTest.h */,
+				DE979C0520EB68A10048EE29 /* ExternTest.m */,
 			);
 			path = "LearnObjective-C";
 			sourceTree = "<group>";
@@ -235,26 +251,32 @@
 			path = Thread;
 			sourceTree = "<group>";
 		};
-		DE6C59551D547FD200077DC8 /* Category */ = {
+		DE6157AE2112F33C006CF725 /* JSCore */ = {
 			isa = PBXGroup;
 			children = (
+				DE6157AF2112F34E006CF725 /* JSCoreViewController.h */,
+				DE6157B02112F34E006CF725 /* JSCoreViewController.m */,
+				DE6157B621130268006CF725 /* index.html */,
 			);
-			path = Category;
+			path = JSCore;
 			sourceTree = "<group>";
 		};
-		DE6C59561D54802800077DC8 /* DataBase */ = {
+		DE6157B22112F3A1006CF725 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE6157B32112F3A1006CF725 /* JavaScriptCore.framework */,
 			);
-			path = DataBase;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DE6C59571D54805600077DC8 /* AttributeText */ = {
+		DE6157B8211323F1006CF725 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				DE6157B921132404006CF725 /* NSStringViewController.h */,
+				DE6157BA21132404006CF725 /* NSStringViewController.m */,
 			);
-			path = AttributeText;
-			sourceTree = "<group>";
+			path = NSString;
+			sourceTree = SOURCE_ROOT;
 		};
 		DE9173C61D5344BE008A0925 /* AsyncDraw */ = {
 			isa = PBXGroup;
@@ -367,6 +389,7 @@
 				DE624B011D9A5991006C4B94 /* analysisdata.json in Resources */,
 				DE2AC4BA1D99175400A38F93 /* performsdata.json in Resources */,
 				B81E2DDA1D24FDAB0084DD41 /* Assets.xcassets in Resources */,
+				DE6157B721130268006CF725 /* index.html in Resources */,
 				DE8DD8251D9E07D40076821F /* test1.png in Resources */,
 				DE624B201D9CF9C1006C4B94 /* test.png in Resources */,
 			);
@@ -394,7 +417,10 @@
 				B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */,
 				B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */,
 				B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */,
+				DE6157B12112F34E006CF725 /* JSCoreViewController.m in Sources */,
+				DE979C0620EB68A10048EE29 /* ExternTest.m in Sources */,
 				DE4DF8DF1D66DA9000A6AB11 /* FPSObject.m in Sources */,
+				DE6157BB21132404006CF725 /* NSStringViewController.m in Sources */,
 				B81E2DEB1D24FF7E0084DD41 /* NSPredicateViewController.m in Sources */,
 				B81E2DCF1D24FDAB0084DD41 /* main.m in Sources */,
 				DE9173C91D5344DF008A0925 /* AsyncDrawViewController.m in Sources */,
@@ -494,8 +520,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DHTEST = "\\@\\\"xxxxx\\\"";
 				INFOPLIST_FILE = "LearnObjective-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DEXPORTDHTEST=${DHTEST}";
 				PRODUCT_BUNDLE_IDENTIFIER = "Dwight.LearnObjective-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -505,8 +533,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DHTEST = "\\@\\\"xxxxx\\\"";
 				INFOPLIST_FILE = "LearnObjective-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DEXPORTDHTEST=${DHTEST}";
 				PRODUCT_BUNDLE_IDENTIFIER = "Dwight.LearnObjective-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

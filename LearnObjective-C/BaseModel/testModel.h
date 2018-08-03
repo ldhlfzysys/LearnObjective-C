@@ -8,6 +8,8 @@
 
 #import "BaseModel.h"
 
+//extern NSString* const DHTEST;
+
 @interface testModel : BaseModel
 @property (nonatomic,strong)NSString *str;
 @property (nonatomic,assign)NSInteger number;
