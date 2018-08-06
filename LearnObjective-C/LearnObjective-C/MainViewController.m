@@ -14,15 +14,19 @@
 #include <execinfo.h>
 #import "ExternTest.h"
 #import <objc/runtime.h>
+#import "WBNaviTransition.h"
+#import "ReactViewController.h"
+#import "CustomPresent.h"
 
 #define kWBUserDefaultsKey  @"kWBUserDefaultsKey"
 extern int ctest();
 static dispatch_queue_t wb_user_defaults_queue;
 static dispatch_queue_t test_queue;
 
-@interface MainViewController(){
+@interface MainViewController()<WBPresentedOneControllerDelegate>{
     
 }
+@property (nonatomic, strong) CustomPresent *interactivePush;
 
 @property (nonatomic,strong) NSMutableArray *arr;
 @property (nonatomic,assign) NSInteger testcount;
@@ -35,12 +39,22 @@ static dispatch_queue_t mqueue;
 
 @synthesize testcount = _testcount;
 
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    _interactivePush = [CustomPresent interactiveTransitionWithTransitionType:WBInteractiveTransitionTypePresent GestureDirection:WBInteractiveTransitionGestureDirectionUp];
+    typeof(self)weakSelf = self;
+    _interactivePush.presentConifg = ^(){
+//        [weakSelf present];
+    };
+    [_interactivePush addPanGestureForViewController:self.navigationController];
+}
 
 
 -(instancetype)init
 {
     if (self = [super init]) {
-        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol",@"JSCore",@"NSString", nil];
+        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol",@"JSCore",@"NSString",@"React", nil];
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"LearnObjective-C";
     
@@ -157,9 +171,28 @@ static dispatch_queue_t mqueue;
     NSMutableString *viewControllerName = [[mControllers objectAtIndex:indexPath.row] mutableCopy];
 //    [viewControllerName insertString:@"Get" atIndex:0];
     [viewControllerName appendString:@"ViewController"];
-    UIViewController *sessionVC = [[NSClassFromString(viewControllerName) alloc]init];
-    [sessionVC setTitle:viewControllerName];
-    [self.navigationController pushViewController:sessionVC animated:YES];
+    if ([viewControllerName isEqualToString:@"ReactViewController"]) {
+        [self present];
+    }else{
+        UIViewController *sessionVC = [[NSClassFromString(viewControllerName) alloc]init];
+        [sessionVC setTitle:viewControllerName];
+        [self.navigationController pushViewController:sessionVC animated:YES];
+    }
+    
 
+}
+
+- (void)presentedOneControllerPressedDissmiss{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)interactiveTransitionForPresent{
+    return _interactivePush;
+}
+
+- (void)present{
+    ReactViewController *presentedVC = [ReactViewController new];
+    presentedVC.delegate = self;
+    [self presentViewController:presentedVC animated:YES completion:nil];
 }
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EE6DB27DA53F5DC19ABD982 /* libPods-LearnObjective-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA508AB709AEC831848D3753 /* libPods-LearnObjective-C.a */; };
 		B81E2DCF1D24FDAB0084DD41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DCE1D24FDAB0084DD41 /* main.m */; };
 		B81E2DD21D24FDAB0084DD41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DD11D24FDAB0084DD41 /* AppDelegate.m */; };
 		B81E2DDA1D24FDAB0084DD41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81E2DD91D24FDAB0084DD41 /* Assets.xcassets */; };
@@ -15,6 +16,9 @@
 		B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B840CF6E1D472DDE0092313E /* RunLoopViewController.m */; };
 		B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86B423A1D4243C6007F1053 /* DrawViewController.m */; };
 		B86B42441D424F49007F1053 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B86B42431D424F49007F1053 /* CoreText.framework */; };
+		DE06BE7B2117EE5B006334E7 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06BE7A2117EE5B006334E7 /* CustomView.m */; };
+		DE06BE822117F4B6006334E7 /* CustomPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06BE812117F4B6006334E7 /* CustomPresent.m */; };
+		DE06BE882117FBE2006334E7 /* WBNaviTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06BE872117FBE2006334E7 /* WBNaviTransition.m */; };
 		DE1BC33E1D8146FF007E7FA2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BC33D1D8146FF007E7FA2 /* HomeViewController.m */; };
 		DE1BC3411D814708007E7FA2 /* HeaderContext.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BC3401D814708007E7FA2 /* HeaderContext.m */; };
 		DE1BC34B1D814B0D007E7FA2 /* ADBannaer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BC34A1D814B0D007E7FA2 /* ADBannaer.m */; };
@@ -28,6 +32,7 @@
 		DE6157B42112F3A1006CF725 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6157B32112F3A1006CF725 /* JavaScriptCore.framework */; };
 		DE6157B721130268006CF725 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = DE6157B621130268006CF725 /* index.html */; };
 		DE6157BB21132404006CF725 /* NSStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6157BA21132404006CF725 /* NSStringViewController.m */; };
+		DE6157C021143483006CF725 /* ReactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6157BF21143483006CF725 /* ReactViewController.m */; };
 		DE624B011D9A5991006C4B94 /* analysisdata.json in Resources */ = {isa = PBXBuildFile; fileRef = DE624B001D9A5991006C4B94 /* analysisdata.json */; };
 		DE624B0F1D9BCEE5006C4B94 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE624B0E1D9BCEE5006C4B94 /* CoreTextViewController.m */; };
 		DE624B201D9CF9C1006C4B94 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = DE624B1F1D9CF9C1006C4B94 /* test.png */; };
@@ -42,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3079CFF14774FDA1E271E4D3 /* Pods-LearnObjective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnObjective-C.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnObjective-C/Pods-LearnObjective-C.debug.xcconfig"; sourceTree = "<group>"; };
 		B81E2DCA1D24FDAB0084DD41 /* LearnObjective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LearnObjective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81E2DCE1D24FDAB0084DD41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B81E2DD01D24FDAB0084DD41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +63,14 @@
 		B86B42391D4243C6007F1053 /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
 		B86B423A1D4243C6007F1053 /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
 		B86B42431D424F49007F1053 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		BA508AB709AEC831848D3753 /* libPods-LearnObjective-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnObjective-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85EB788C035C93B344FDF41 /* Pods-LearnObjective-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnObjective-C.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnObjective-C/Pods-LearnObjective-C.release.xcconfig"; sourceTree = "<group>"; };
+		DE06BE792117EE5B006334E7 /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		DE06BE7A2117EE5B006334E7 /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		DE06BE802117F4B6006334E7 /* CustomPresent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPresent.h; sourceTree = "<group>"; };
+		DE06BE812117F4B6006334E7 /* CustomPresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPresent.m; sourceTree = "<group>"; };
+		DE06BE862117FBE2006334E7 /* WBNaviTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBNaviTransition.h; sourceTree = "<group>"; };
+		DE06BE872117FBE2006334E7 /* WBNaviTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBNaviTransition.m; sourceTree = "<group>"; };
 		DE1BC33C1D8146FF007E7FA2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		DE1BC33D1D8146FF007E7FA2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		DE1BC33F1D814708007E7FA2 /* HeaderContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderContext.h; sourceTree = "<group>"; };
@@ -80,6 +94,8 @@
 		DE6157B621130268006CF725 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		DE6157B921132404006CF725 /* NSStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringViewController.h; sourceTree = "<group>"; };
 		DE6157BA21132404006CF725 /* NSStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringViewController.m; sourceTree = "<group>"; };
+		DE6157BE21143483006CF725 /* ReactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactViewController.h; sourceTree = "<group>"; };
+		DE6157BF21143483006CF725 /* ReactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactViewController.m; sourceTree = "<group>"; };
 		DE624B001D9A5991006C4B94 /* analysisdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = analysisdata.json; sourceTree = "<group>"; };
 		DE624B0D1D9BCEE5006C4B94 /* CoreTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextViewController.h; sourceTree = "<group>"; };
 		DE624B0E1D9BCEE5006C4B94 /* CoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextViewController.m; sourceTree = "<group>"; };
@@ -108,6 +124,7 @@
 			files = (
 				DE6157B42112F3A1006CF725 /* JavaScriptCore.framework in Frameworks */,
 				B86B42441D424F49007F1053 /* CoreText.framework in Frameworks */,
+				7EE6DB27DA53F5DC19ABD982 /* libPods-LearnObjective-C.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +142,7 @@
 				DEDE65641D922AD7005BE223 /* semaphore */,
 				DE6157AE2112F33C006CF725 /* JSCore */,
 				DE9173C61D5344BE008A0925 /* AsyncDraw */,
+				DE6157BD21143478006CF725 /* React */,
 				B81E2DE51D24FE7D0084DD41 /* NSPredicate */,
 				DE9173D41D54346A008A0925 /* CoreText */,
 				DEBAD05F1DAF514F0006CA28 /* ScrollView */,
@@ -132,9 +150,11 @@
 				DE2AC4B51D99132E00A38F93 /* feedperforms */,
 				DEBD20651D6AD02E0084AEBC /* BaseModel */,
 				DE4DF8DC1D66D93800A6AB11 /* FPS */,
+				DE06BE7F2117F49B006334E7 /* present */,
 				B840CF6C1D472DCC0092313E /* RunLoop */,
 				B81E2DCB1D24FDAB0084DD41 /* Products */,
 				DE6157B22112F3A1006CF725 /* Frameworks */,
+				E57523E08331702D3110A677 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +216,15 @@
 				B86B423A1D4243C6007F1053 /* DrawViewController.m */,
 			);
 			path = Draw;
+			sourceTree = "<group>";
+		};
+		DE06BE7F2117F49B006334E7 /* present */ = {
+			isa = PBXGroup;
+			children = (
+				DE06BE802117F4B6006334E7 /* CustomPresent.h */,
+				DE06BE812117F4B6006334E7 /* CustomPresent.m */,
+			);
+			path = present;
 			sourceTree = "<group>";
 		};
 		DE1BC33B1D8146EF007E7FA2 /* Design */ = {
@@ -265,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6157B32112F3A1006CF725 /* JavaScriptCore.framework */,
+				BA508AB709AEC831848D3753 /* libPods-LearnObjective-C.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -277,6 +307,19 @@
 			);
 			path = NSString;
 			sourceTree = SOURCE_ROOT;
+		};
+		DE6157BD21143478006CF725 /* React */ = {
+			isa = PBXGroup;
+			children = (
+				DE6157BE21143483006CF725 /* ReactViewController.h */,
+				DE6157BF21143483006CF725 /* ReactViewController.m */,
+				DE06BE792117EE5B006334E7 /* CustomView.h */,
+				DE06BE7A2117EE5B006334E7 /* CustomView.m */,
+				DE06BE862117FBE2006334E7 /* WBNaviTransition.h */,
+				DE06BE872117FBE2006334E7 /* WBNaviTransition.m */,
+			);
+			path = React;
+			sourceTree = "<group>";
 		};
 		DE9173C61D5344BE008A0925 /* AsyncDraw */ = {
 			isa = PBXGroup;
@@ -329,6 +372,15 @@
 			path = semaphore;
 			sourceTree = "<group>";
 		};
+		E57523E08331702D3110A677 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3079CFF14774FDA1E271E4D3 /* Pods-LearnObjective-C.debug.xcconfig */,
+				C85EB788C035C93B344FDF41 /* Pods-LearnObjective-C.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -336,9 +388,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B81E2DE11D24FDAB0084DD41 /* Build configuration list for PBXNativeTarget "LearnObjective-C" */;
 			buildPhases = (
+				D21FCDB9ABFCED696D7D767B /* [CP] Check Pods Manifest.lock */,
 				B81E2DC61D24FDAB0084DD41 /* Sources */,
 				B81E2DC71D24FDAB0084DD41 /* Frameworks */,
 				B81E2DC81D24FDAB0084DD41 /* Resources */,
+				6C26380415CC909281A4FB33 /* [CP] Embed Pods Frameworks */,
+				D3B6A619D2CF6200CE70DEBC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -397,6 +452,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C26380415CC909281A4FB33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnObjective-C/Pods-LearnObjective-C-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D21FCDB9ABFCED696D7D767B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B6A619D2CF6200CE70DEBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnObjective-C/Pods-LearnObjective-C-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B81E2DC61D24FDAB0084DD41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -408,6 +511,8 @@
 				DE58A2441D5984A600F78879 /* ThreadViewController.m in Sources */,
 				DEBD206B1D6AD3360084AEBC /* testModel.m in Sources */,
 				DEBAD0621DAF516A0006CA28 /* MyScrollViewController.m in Sources */,
+				DE6157C021143483006CF725 /* ReactViewController.m in Sources */,
+				DE06BE882117FBE2006334E7 /* WBNaviTransition.m in Sources */,
 				DE1BC34B1D814B0D007E7FA2 /* ADBannaer.m in Sources */,
 				DE1BC3411D814708007E7FA2 /* HeaderContext.m in Sources */,
 				DEBD20681D6AD03D0084AEBC /* BaseModel.m in Sources */,
@@ -416,6 +521,7 @@
 				DE624B0F1D9BCEE5006C4B94 /* CoreTextViewController.m in Sources */,
 				B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */,
 				B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */,
+				DE06BE7B2117EE5B006334E7 /* CustomView.m in Sources */,
 				B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */,
 				DE6157B12112F34E006CF725 /* JSCoreViewController.m in Sources */,
 				DE979C0620EB68A10048EE29 /* ExternTest.m in Sources */,
@@ -425,6 +531,7 @@
 				B81E2DCF1D24FDAB0084DD41 /* main.m in Sources */,
 				DE9173C91D5344DF008A0925 /* AsyncDrawViewController.m in Sources */,
 				DE1BC33E1D8146FF007E7FA2 /* HomeViewController.m in Sources */,
+				DE06BE822117F4B6006334E7 /* CustomPresent.m in Sources */,
 				DE2AC4B81D99134500A38F93 /* FeedPerformsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,9 +625,16 @@
 		};
 		B81E2DE21D24FDAB0084DD41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3079CFF14774FDA1E271E4D3 /* Pods-LearnObjective-C.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DHTEST = "\\@\\\"xxxxx\\\"";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"/**",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"/**",
+				);
 				INFOPLIST_FILE = "LearnObjective-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-DEXPORTDHTEST=${DHTEST}";
@@ -531,9 +645,16 @@
 		};
 		B81E2DE31D24FDAB0084DD41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C85EB788C035C93B344FDF41 /* Pods-LearnObjective-C.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DHTEST = "\\@\\\"xxxxx\\\"";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"/**",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"/**",
+				);
 				INFOPLIST_FILE = "LearnObjective-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-DEXPORTDHTEST=${DHTEST}";
