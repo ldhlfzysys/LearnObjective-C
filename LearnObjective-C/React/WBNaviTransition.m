@@ -59,22 +59,26 @@
     //设置vc2的frame，因为这里vc2present出来不是全屏，且初始的时候在底部，如果不设置frame的话默认就是整个屏幕咯，这里containerView的frame就是整个屏幕
     toVC.view.frame = CGRectMake(0, containerView.frame.size.height, containerView.frame.size.width, containerView.frame.size.height);
     //开始动画吧，使用产生弹簧效果的动画API
-    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-        //首先我们让vc2向上移动
-        toVC.view.transform = CGAffineTransformMakeTranslation(0, -containerView.frame.size.height);
-        //然后让截图视图缩小一点即可
-        tempView.transform = CGAffineTransformMakeScale(0.9, 0.9);
+    [UIView animateWithDuration:0.1 animations:^{
+        tempView.transform = CGAffineTransformMakeScale(0.95, 0.95);
     } completion:^(BOOL finished) {
-        //使用如下代码标记整个转场过程是否正常完成[transitionContext transitionWasCancelled]代表手势是否取消了，如果取消了就传NO表示转场失败，反之亦然，如果不是用手势的话直接传YES也是可以的，我们必须标记转场的状态，系统才知道处理转场后的操作，否者认为你一直还在，会出现无法交互的情况，切记
-        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
-        //转场失败后的处理
-        if ([transitionContext transitionWasCancelled]) {
-            //失败后，我们要把vc1显示出来
-            fromVC.view.hidden = NO;
-            //然后移除截图视图，因为下次触发present会重新截图
-            [tempView removeFromSuperview];
-        }
+        [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+            //首先我们让vc2向上移动
+            toVC.view.transform = CGAffineTransformMakeTranslation(0, -containerView.frame.size.height);
+            //然后让截图视图缩小一点即可
+        } completion:^(BOOL finished) {
+            //使用如下代码标记整个转场过程是否正常完成[transitionContext transitionWasCancelled]代表手势是否取消了，如果取消了就传NO表示转场失败，反之亦然，如果不是用手势的话直接传YES也是可以的，我们必须标记转场的状态，系统才知道处理转场后的操作，否者认为你一直还在，会出现无法交互的情况，切记
+            [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+            //转场失败后的处理
+            if ([transitionContext transitionWasCancelled]) {
+                //失败后，我们要把vc1显示出来
+                fromVC.view.hidden = NO;
+                //然后移除截图视图，因为下次触发present会重新截图
+                [tempView removeFromSuperview];
+            }
+        }];
     }];
+    
 
 }
 
