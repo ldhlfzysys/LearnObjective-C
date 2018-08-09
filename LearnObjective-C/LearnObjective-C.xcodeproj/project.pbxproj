@@ -13,12 +13,15 @@
 		B81E2DDA1D24FDAB0084DD41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81E2DD91D24FDAB0084DD41 /* Assets.xcassets */; };
 		B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DE71D24FEDA0084DD41 /* MainViewController.m */; };
 		B81E2DEB1D24FF7E0084DD41 /* NSPredicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E2DEA1D24FF7E0084DD41 /* NSPredicateViewController.m */; };
-		B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B840CF6E1D472DDE0092313E /* RunLoopViewController.m */; };
+		B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B840CF6E1D472DDE0092313E /* RunLoopViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86B423A1D4243C6007F1053 /* DrawViewController.m */; };
 		B86B42441D424F49007F1053 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B86B42431D424F49007F1053 /* CoreText.framework */; };
 		DE06BE7B2117EE5B006334E7 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06BE7A2117EE5B006334E7 /* CustomView.m */; };
 		DE06BE822117F4B6006334E7 /* CustomPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06BE812117F4B6006334E7 /* CustomPresent.m */; };
 		DE06BE882117FBE2006334E7 /* WBNaviTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06BE872117FBE2006334E7 /* WBNaviTransition.m */; };
+		DE06BE8F21183E34006334E7 /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06BE8E21183E34006334E7 /* OperationViewController.m */; };
+		DE06BE9321184044006334E7 /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06BE9221184044006334E7 /* MyOperation.m */; };
+		DE06BE9621184053006334E7 /* MyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06BE9521184053006334E7 /* MyRequest.m */; };
 		DE1BC33E1D8146FF007E7FA2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BC33D1D8146FF007E7FA2 /* HomeViewController.m */; };
 		DE1BC3411D814708007E7FA2 /* HeaderContext.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BC3401D814708007E7FA2 /* HeaderContext.m */; };
 		DE1BC34B1D814B0D007E7FA2 /* ADBannaer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BC34A1D814B0D007E7FA2 /* ADBannaer.m */; };
@@ -71,6 +74,12 @@
 		DE06BE812117F4B6006334E7 /* CustomPresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPresent.m; sourceTree = "<group>"; };
 		DE06BE862117FBE2006334E7 /* WBNaviTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBNaviTransition.h; sourceTree = "<group>"; };
 		DE06BE872117FBE2006334E7 /* WBNaviTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBNaviTransition.m; sourceTree = "<group>"; };
+		DE06BE8D21183E34006334E7 /* OperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
+		DE06BE8E21183E34006334E7 /* OperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationViewController.m; sourceTree = "<group>"; };
+		DE06BE9121184044006334E7 /* MyOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOperation.h; sourceTree = "<group>"; };
+		DE06BE9221184044006334E7 /* MyOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOperation.m; sourceTree = "<group>"; };
+		DE06BE9421184053006334E7 /* MyRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRequest.h; sourceTree = "<group>"; };
+		DE06BE9521184053006334E7 /* MyRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRequest.m; sourceTree = "<group>"; };
 		DE1BC33C1D8146FF007E7FA2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		DE1BC33D1D8146FF007E7FA2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		DE1BC33F1D814708007E7FA2 /* HeaderContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderContext.h; sourceTree = "<group>"; };
@@ -142,6 +151,7 @@
 				DEDE65641D922AD7005BE223 /* semaphore */,
 				DE6157AE2112F33C006CF725 /* JSCore */,
 				DE9173C61D5344BE008A0925 /* AsyncDraw */,
+				DE06BE8C21183E23006334E7 /* Operation */,
 				DE6157BD21143478006CF725 /* React */,
 				B81E2DE51D24FE7D0084DD41 /* NSPredicate */,
 				DE9173D41D54346A008A0925 /* CoreText */,
@@ -225,6 +235,19 @@
 				DE06BE812117F4B6006334E7 /* CustomPresent.m */,
 			);
 			path = present;
+			sourceTree = "<group>";
+		};
+		DE06BE8C21183E23006334E7 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				DE06BE8D21183E34006334E7 /* OperationViewController.h */,
+				DE06BE8E21183E34006334E7 /* OperationViewController.m */,
+				DE06BE9121184044006334E7 /* MyOperation.h */,
+				DE06BE9221184044006334E7 /* MyOperation.m */,
+				DE06BE9421184053006334E7 /* MyRequest.h */,
+				DE06BE9521184053006334E7 /* MyRequest.m */,
+			);
+			path = Operation;
 			sourceTree = "<group>";
 		};
 		DE1BC33B1D8146EF007E7FA2 /* Design */ = {
@@ -508,6 +531,7 @@
 				B81E2DD21D24FDAB0084DD41 /* AppDelegate.m in Sources */,
 				DE9173CC1D534894008A0925 /* AsyncView.m in Sources */,
 				DE514A481DD3009300D01983 /* MyObject.m in Sources */,
+				DE06BE9321184044006334E7 /* MyOperation.m in Sources */,
 				DE58A2441D5984A600F78879 /* ThreadViewController.m in Sources */,
 				DEBD206B1D6AD3360084AEBC /* testModel.m in Sources */,
 				DEBAD0621DAF516A0006CA28 /* MyScrollViewController.m in Sources */,
@@ -518,10 +542,12 @@
 				DEBD20681D6AD03D0084AEBC /* BaseModel.m in Sources */,
 				DE514A451DD2FF8400D01983 /* ProtocolViewController.m in Sources */,
 				DEDE65671D922AF1005BE223 /* SemaphoreViewController.m in Sources */,
+				DE06BE9621184053006334E7 /* MyRequest.m in Sources */,
 				DE624B0F1D9BCEE5006C4B94 /* CoreTextViewController.m in Sources */,
 				B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */,
 				B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */,
 				DE06BE7B2117EE5B006334E7 /* CustomView.m in Sources */,
+				DE06BE8F21183E34006334E7 /* OperationViewController.m in Sources */,
 				B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */,
 				DE6157B12112F34E006CF725 /* JSCoreViewController.m in Sources */,
 				DE979C0620EB68A10048EE29 /* ExternTest.m in Sources */,

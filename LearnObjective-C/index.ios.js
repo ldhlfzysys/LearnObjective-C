@@ -3,12 +3,17 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Alert,
+  Button
 } from 'react-native';
 
 import {NativeModules} from 'react-native';
 // import MapView from './MapView.js';
 
+const onButtonPress = () => {
+  Alert.alert('点击了Button按钮');
+};
 
 var CustomView = NativeModules.CustomView;
 CustomView.addEvent('Birthday Party', '4 Privet Drive, Surrey');
@@ -27,6 +32,11 @@ class Root extends React.Component {
                     Double tap R on your keyboard to reload,{'\n'}
                     Shake or press menu button for dev menu
                 </Text>
+                <Button
+                    title="我是按钮"
+                    onPress={onButtonPress}
+                    color="#841584">
+                </Button>
             </View>
         );
     }

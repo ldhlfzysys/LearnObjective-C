@@ -40,7 +40,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
 
-    self.interactiveDismiss = [CustomPresent interactiveTransitionWithTransitionType:WBInteractiveTransitionTypeDismiss GestureDirection:WBInteractiveTransitionGestureDirectionDown];
+    self.interactiveDismiss = [CustomPresent interactiveTransitionWithTransitionType:WBInteractiveTransitionTypeDismiss GestureDirection:WBInteractiveTransitionGestureDirectionRight];
     [self.interactiveDismiss addPanGestureForViewController:self];
     
 #if TARGET_IPHONE_SIMULATOR
