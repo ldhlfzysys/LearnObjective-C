@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "FPSObject.h"
+
 #import "testModel.h"
 
 #include <libkern/OSAtomic.h>
@@ -17,7 +17,7 @@
 #import "WBNaviTransition.h"
 #import "ReactViewController.h"
 #import "CustomPresent.h"
-
+#import "NavigatorViewController.h"
 #define kWBUserDefaultsKey  @"kWBUserDefaultsKey"
 extern int ctest();
 static dispatch_queue_t wb_user_defaults_queue;
@@ -48,15 +48,23 @@ static dispatch_queue_t mqueue;
 //        [weakSelf present];
     };
     [_interactivePush addPanGestureForViewController:self.navigationController];
-    
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+    [self test:dict];
+    [dict setObject:@"aa" forKey:@"aa"];
 }
 
+- (void)test:(NSMutableDictionary *)dict
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"%@",dict);
+    });
+}
 
 
 -(instancetype)init
 {
     if (self = [super init]) {
-        mControllers = [NSArray arrayWithObjects:@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol",@"JSCore",@"NSString",@"React",@"Operation", nil];
+        mControllers = [NSArray arrayWithObjects:@"Navigator",@"Invocation",@"JSContext",@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol",@"JSCore",@"NSString",@"React",@"Operation", nil];
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"LearnObjective-C";
     
@@ -169,10 +177,30 @@ static dispatch_queue_t mqueue;
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
 //    NSLog(@"%ld",self.testcount);
     NSMutableString *viewControllerName = [[mControllers objectAtIndex:indexPath.row] mutableCopy];
 //    [viewControllerName insertString:@"Get" atIndex:0];
     [viewControllerName appendString:@"ViewController"];
+    
+    if ([viewControllerName isEqualToString:@"NavigatorViewController"]) {
+        WBXLaunchViewController *launch = [[WBXLaunchViewController alloc] init];
+        [self presentViewController:launch animated:YES completion:nil];
+        NavigatorViewController *v1 = [[NavigatorViewController alloc] init];
+        v1.title =@"loading";
+        [launch pushViewController:v1 animated:YES];
+        
+        NavigatorViewController *v2 = [[NavigatorViewController alloc] init];
+        v2.title =@"2";
+        [launch pushViewController:v2 animated:YES];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSMutableArray *arr = [[NSMutableArray alloc] initWithArray:launch.viewControllers];
+            [arr removeObjectAtIndex:0];
+            [launch setViewControllers:arr animated:YES];
+
+        });
+        
+    }
     if ([viewControllerName isEqualToString:@"ReactViewController"]) {
         [self present];
     }else{

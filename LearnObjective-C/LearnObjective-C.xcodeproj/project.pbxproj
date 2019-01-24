@@ -27,10 +27,15 @@
 		DE1BC34B1D814B0D007E7FA2 /* ADBannaer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BC34A1D814B0D007E7FA2 /* ADBannaer.m */; };
 		DE2AC4B81D99134500A38F93 /* FeedPerformsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2AC4B71D99134500A38F93 /* FeedPerformsViewController.m */; };
 		DE2AC4BA1D99175400A38F93 /* performsdata.json in Resources */ = {isa = PBXBuildFile; fileRef = DE2AC4B91D99175400A38F93 /* performsdata.json */; };
+		DE3350E421B4F43700AED4F4 /* JSContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3350E221B4F43700AED4F4 /* JSContextViewController.m */; };
+		DE3350E621B4F48C00AED4F4 /* page.js in Resources */ = {isa = PBXBuildFile; fileRef = DE3350E521B4F48C00AED4F4 /* page.js */; };
+		DE3350E821B4F49B00AED4F4 /* service.js in Resources */ = {isa = PBXBuildFile; fileRef = DE3350E721B4F49B00AED4F4 /* service.js */; };
 		DE4DF8DF1D66DA9000A6AB11 /* FPSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4DF8DE1D66DA9000A6AB11 /* FPSObject.m */; };
 		DE514A451DD2FF8400D01983 /* ProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE514A441DD2FF8400D01983 /* ProtocolViewController.m */; };
 		DE514A481DD3009300D01983 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DE514A471DD3009300D01983 /* MyObject.m */; };
 		DE58A2441D5984A600F78879 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE58A2431D5984A600F78879 /* ThreadViewController.m */; };
+		DE5B20A321C0E58A00F0B351 /* InvocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5B20A221C0E58A00F0B351 /* InvocationViewController.m */; };
+		DE5B20A721C0FAD100F0B351 /* NavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5B20A621C0FAD100F0B351 /* NavigatorViewController.m */; };
 		DE6157B12112F34E006CF725 /* JSCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6157B02112F34E006CF725 /* JSCoreViewController.m */; };
 		DE6157B42112F3A1006CF725 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6157B32112F3A1006CF725 /* JavaScriptCore.framework */; };
 		DE6157B721130268006CF725 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = DE6157B621130268006CF725 /* index.html */; };
@@ -89,6 +94,10 @@
 		DE2AC4B61D99134500A38F93 /* FeedPerformsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedPerformsViewController.h; sourceTree = "<group>"; };
 		DE2AC4B71D99134500A38F93 /* FeedPerformsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedPerformsViewController.m; sourceTree = "<group>"; };
 		DE2AC4B91D99175400A38F93 /* performsdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = performsdata.json; sourceTree = "<group>"; };
+		DE3350E221B4F43700AED4F4 /* JSContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSContextViewController.m; sourceTree = "<group>"; };
+		DE3350E321B4F43700AED4F4 /* JSContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSContextViewController.h; sourceTree = "<group>"; };
+		DE3350E521B4F48C00AED4F4 /* page.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = page.js; sourceTree = "<group>"; };
+		DE3350E721B4F49B00AED4F4 /* service.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = service.js; sourceTree = "<group>"; };
 		DE4DF8DD1D66DA9000A6AB11 /* FPSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSObject.h; sourceTree = "<group>"; };
 		DE4DF8DE1D66DA9000A6AB11 /* FPSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSObject.m; sourceTree = "<group>"; };
 		DE514A431DD2FF8400D01983 /* ProtocolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolViewController.h; sourceTree = "<group>"; };
@@ -97,6 +106,10 @@
 		DE514A471DD3009300D01983 /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
 		DE58A2421D5984A600F78879 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		DE58A2431D5984A600F78879 /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		DE5B20A121C0E58A00F0B351 /* InvocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvocationViewController.h; sourceTree = "<group>"; };
+		DE5B20A221C0E58A00F0B351 /* InvocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvocationViewController.m; sourceTree = "<group>"; };
+		DE5B20A521C0FAD100F0B351 /* NavigatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigatorViewController.h; sourceTree = "<group>"; };
+		DE5B20A621C0FAD100F0B351 /* NavigatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigatorViewController.m; sourceTree = "<group>"; };
 		DE6157AF2112F34E006CF725 /* JSCoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCoreViewController.h; sourceTree = "<group>"; };
 		DE6157B02112F34E006CF725 /* JSCoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCoreViewController.m; sourceTree = "<group>"; };
 		DE6157B32112F3A1006CF725 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -146,6 +159,7 @@
 				B86B42431D424F49007F1053 /* CoreText.framework */,
 				B81E2DCC1D24FDAB0084DD41 /* LearnObjective-C */,
 				DE58A2411D59849900F78879 /* Thread */,
+				DE3350E121B4F41E00AED4F4 /* JSContext */,
 				B86B42381D4243B9007F1053 /* Draw */,
 				DE6157B8211323F1006CF725 /* NSString */,
 				DEDE65641D922AD7005BE223 /* semaphore */,
@@ -179,6 +193,8 @@
 		B81E2DCC1D24FDAB0084DD41 /* LearnObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				DE5B20A421C0FABF00F0B351 /* Navigator */,
+				DE5B20A021C0E56C00F0B351 /* Invocation */,
 				DE514A421DD2FF7700D01983 /* Protocol */,
 				B81E2DD01D24FDAB0084DD41 /* AppDelegate.h */,
 				B81E2DD11D24FDAB0084DD41 /* AppDelegate.m */,
@@ -274,6 +290,17 @@
 			path = feedperforms;
 			sourceTree = "<group>";
 		};
+		DE3350E121B4F41E00AED4F4 /* JSContext */ = {
+			isa = PBXGroup;
+			children = (
+				DE3350E321B4F43700AED4F4 /* JSContextViewController.h */,
+				DE3350E221B4F43700AED4F4 /* JSContextViewController.m */,
+				DE3350E521B4F48C00AED4F4 /* page.js */,
+				DE3350E721B4F49B00AED4F4 /* service.js */,
+			);
+			path = JSContext;
+			sourceTree = "<group>";
+		};
 		DE4DF8DC1D66D93800A6AB11 /* FPS */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +329,24 @@
 			);
 			path = Thread;
 			sourceTree = "<group>";
+		};
+		DE5B20A021C0E56C00F0B351 /* Invocation */ = {
+			isa = PBXGroup;
+			children = (
+				DE5B20A121C0E58A00F0B351 /* InvocationViewController.h */,
+				DE5B20A221C0E58A00F0B351 /* InvocationViewController.m */,
+			);
+			path = Invocation;
+			sourceTree = SOURCE_ROOT;
+		};
+		DE5B20A421C0FABF00F0B351 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				DE5B20A521C0FAD100F0B351 /* NavigatorViewController.h */,
+				DE5B20A621C0FAD100F0B351 /* NavigatorViewController.m */,
+			);
+			path = Navigator;
+			sourceTree = SOURCE_ROOT;
 		};
 		DE6157AE2112F33C006CF725 /* JSCore */ = {
 			isa = PBXGroup;
@@ -464,11 +509,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3350E621B4F48C00AED4F4 /* page.js in Resources */,
 				DE624B011D9A5991006C4B94 /* analysisdata.json in Resources */,
 				DE2AC4BA1D99175400A38F93 /* performsdata.json in Resources */,
 				B81E2DDA1D24FDAB0084DD41 /* Assets.xcassets in Resources */,
 				DE6157B721130268006CF725 /* index.html in Resources */,
 				DE8DD8251D9E07D40076821F /* test1.png in Resources */,
+				DE3350E821B4F49B00AED4F4 /* service.js in Resources */,
 				DE624B201D9CF9C1006C4B94 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,6 +581,7 @@
 				DE06BE9321184044006334E7 /* MyOperation.m in Sources */,
 				DE58A2441D5984A600F78879 /* ThreadViewController.m in Sources */,
 				DEBD206B1D6AD3360084AEBC /* testModel.m in Sources */,
+				DE5B20A321C0E58A00F0B351 /* InvocationViewController.m in Sources */,
 				DEBAD0621DAF516A0006CA28 /* MyScrollViewController.m in Sources */,
 				DE6157C021143483006CF725 /* ReactViewController.m in Sources */,
 				DE06BE882117FBE2006334E7 /* WBNaviTransition.m in Sources */,
@@ -547,8 +595,10 @@
 				B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */,
 				B840CF6F1D472DDE0092313E /* RunLoopViewController.m in Sources */,
 				DE06BE7B2117EE5B006334E7 /* CustomView.m in Sources */,
+				DE5B20A721C0FAD100F0B351 /* NavigatorViewController.m in Sources */,
 				DE06BE8F21183E34006334E7 /* OperationViewController.m in Sources */,
 				B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */,
+				DE3350E421B4F43700AED4F4 /* JSContextViewController.m in Sources */,
 				DE6157B12112F34E006CF725 /* JSCoreViewController.m in Sources */,
 				DE979C0620EB68A10048EE29 /* ExternTest.m in Sources */,
 				DE4DF8DF1D66DA9000A6AB11 /* FPSObject.m in Sources */,
