@@ -45,6 +45,7 @@
 
         
         
+        
     }
     return self;
 }
@@ -86,5 +87,17 @@
     test.backgroundColor = [UIColor whiteColor];
     [test setupData];
     [self.view addSubview:test];
+    
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 100, 300, 200)];
+    textView.backgroundColor = [UIColor redColor];
+    textView.pasteDelegate = self;
+    [self.view addSubview:textView];
 }
+
+- (BOOL)textPasteConfigurationSupporting:(id<UITextPasteConfigurationSupporting>)textPasteConfigurationSupporting shouldAnimatePasteOfAttributedString:(NSAttributedString*)attributedString toRange:(UITextRange*)textRange;
+
+{
+    return NO;
+}
+
 @end

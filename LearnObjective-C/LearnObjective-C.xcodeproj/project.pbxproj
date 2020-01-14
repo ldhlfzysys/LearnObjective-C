@@ -25,11 +25,14 @@
 		DE1BC33E1D8146FF007E7FA2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BC33D1D8146FF007E7FA2 /* HomeViewController.m */; };
 		DE1BC3411D814708007E7FA2 /* HeaderContext.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BC3401D814708007E7FA2 /* HeaderContext.m */; };
 		DE1BC34B1D814B0D007E7FA2 /* ADBannaer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BC34A1D814B0D007E7FA2 /* ADBannaer.m */; };
+		DE2AA5682323A9D3009FF2E3 /* weibocn.cer in Resources */ = {isa = PBXBuildFile; fileRef = DE2AA5662323A9D3009FF2E3 /* weibocn.cer */; };
+		DE2AA5692323A9D3009FF2E3 /* weibocom.cer in Resources */ = {isa = PBXBuildFile; fileRef = DE2AA5672323A9D3009FF2E3 /* weibocom.cer */; };
 		DE2AC4B81D99134500A38F93 /* FeedPerformsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2AC4B71D99134500A38F93 /* FeedPerformsViewController.m */; };
 		DE2AC4BA1D99175400A38F93 /* performsdata.json in Resources */ = {isa = PBXBuildFile; fileRef = DE2AC4B91D99175400A38F93 /* performsdata.json */; };
 		DE3350E421B4F43700AED4F4 /* JSContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3350E221B4F43700AED4F4 /* JSContextViewController.m */; };
 		DE3350E621B4F48C00AED4F4 /* page.js in Resources */ = {isa = PBXBuildFile; fileRef = DE3350E521B4F48C00AED4F4 /* page.js */; };
 		DE3350E821B4F49B00AED4F4 /* service.js in Resources */ = {isa = PBXBuildFile; fileRef = DE3350E721B4F49B00AED4F4 /* service.js */; };
+		DE3C5CF923839FAD00E1070F /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DE3C5CF823839FAD00E1070F /* 2.png */; };
 		DE4DF8DF1D66DA9000A6AB11 /* FPSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4DF8DE1D66DA9000A6AB11 /* FPSObject.m */; };
 		DE514A451DD2FF8400D01983 /* ProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE514A441DD2FF8400D01983 /* ProtocolViewController.m */; };
 		DE514A481DD3009300D01983 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DE514A471DD3009300D01983 /* MyObject.m */; };
@@ -44,14 +47,19 @@
 		DE624B011D9A5991006C4B94 /* analysisdata.json in Resources */ = {isa = PBXBuildFile; fileRef = DE624B001D9A5991006C4B94 /* analysisdata.json */; };
 		DE624B0F1D9BCEE5006C4B94 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE624B0E1D9BCEE5006C4B94 /* CoreTextViewController.m */; };
 		DE624B201D9CF9C1006C4B94 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = DE624B1F1D9CF9C1006C4B94 /* test.png */; };
+		DE75B8FE230BC9BF006BA06E /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE75B8FD230BC9BF006BA06E /* WKWebViewController.m */; };
+		DE88A7C6231CB13200C0B047 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DE88A7C5231CB13200C0B047 /* 1.png */; };
 		DE8DD8251D9E07D40076821F /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = DE8DD8241D9E07D40076821F /* test1.png */; };
 		DE9173C91D5344DF008A0925 /* AsyncDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */; };
 		DE9173CC1D534894008A0925 /* AsyncView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173CB1D534894008A0925 /* AsyncView.m */; };
 		DE979C0620EB68A10048EE29 /* ExternTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE979C0520EB68A10048EE29 /* ExternTest.m */; };
+		DE9A9E412373EC2E00AC1C08 /* SnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9A9E402373EC2E00AC1C08 /* SnapshotViewController.m */; };
+		DE9EB2DF2339E75500841C58 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9EB2DD2339E75500841C58 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DEBAD0621DAF516A0006CA28 /* MyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBAD0611DAF516A0006CA28 /* MyScrollViewController.m */; };
 		DEBD20681D6AD03D0084AEBC /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBD20671D6AD03D0084AEBC /* BaseModel.m */; };
 		DEBD206B1D6AD3360084AEBC /* testModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBD206A1D6AD3360084AEBC /* testModel.m */; };
 		DEDE65671D922AF1005BE223 /* SemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE65661D922AF1005BE223 /* SemaphoreViewController.m */; };
+		DEE3F0662396413000CEF0BB /* WeakBlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE3F0652396413000CEF0BB /* WeakBlockTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +99,8 @@
 		DE1BC3401D814708007E7FA2 /* HeaderContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderContext.m; sourceTree = "<group>"; };
 		DE1BC3491D814B0D007E7FA2 /* ADBannaer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBannaer.h; sourceTree = "<group>"; };
 		DE1BC34A1D814B0D007E7FA2 /* ADBannaer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADBannaer.m; sourceTree = "<group>"; };
+		DE2AA5662323A9D3009FF2E3 /* weibocn.cer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = weibocn.cer; sourceTree = "<group>"; };
+		DE2AA5672323A9D3009FF2E3 /* weibocom.cer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = weibocom.cer; sourceTree = "<group>"; };
 		DE2AC4B61D99134500A38F93 /* FeedPerformsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedPerformsViewController.h; sourceTree = "<group>"; };
 		DE2AC4B71D99134500A38F93 /* FeedPerformsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedPerformsViewController.m; sourceTree = "<group>"; };
 		DE2AC4B91D99175400A38F93 /* performsdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = performsdata.json; sourceTree = "<group>"; };
@@ -98,6 +108,7 @@
 		DE3350E321B4F43700AED4F4 /* JSContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSContextViewController.h; sourceTree = "<group>"; };
 		DE3350E521B4F48C00AED4F4 /* page.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = page.js; sourceTree = "<group>"; };
 		DE3350E721B4F49B00AED4F4 /* service.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = service.js; sourceTree = "<group>"; };
+		DE3C5CF823839FAD00E1070F /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		DE4DF8DD1D66DA9000A6AB11 /* FPSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSObject.h; sourceTree = "<group>"; };
 		DE4DF8DE1D66DA9000A6AB11 /* FPSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSObject.m; sourceTree = "<group>"; };
 		DE514A431DD2FF8400D01983 /* ProtocolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolViewController.h; sourceTree = "<group>"; };
@@ -122,6 +133,9 @@
 		DE624B0D1D9BCEE5006C4B94 /* CoreTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextViewController.h; sourceTree = "<group>"; };
 		DE624B0E1D9BCEE5006C4B94 /* CoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextViewController.m; sourceTree = "<group>"; };
 		DE624B1F1D9CF9C1006C4B94 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		DE75B8FC230BC9BF006BA06E /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		DE75B8FD230BC9BF006BA06E /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		DE88A7C5231CB13200C0B047 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		DE8DD8241D9E07D40076821F /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
 		DE9173C71D5344DF008A0925 /* AsyncDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncDrawViewController.h; sourceTree = "<group>"; };
 		DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncDrawViewController.m; sourceTree = "<group>"; };
@@ -129,6 +143,10 @@
 		DE9173CB1D534894008A0925 /* AsyncView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncView.m; sourceTree = "<group>"; };
 		DE979C0420EB68A10048EE29 /* ExternTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternTest.h; sourceTree = "<group>"; };
 		DE979C0520EB68A10048EE29 /* ExternTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExternTest.m; sourceTree = "<group>"; };
+		DE9A9E3F2373EC2E00AC1C08 /* SnapshotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapshotViewController.h; sourceTree = "<group>"; };
+		DE9A9E402373EC2E00AC1C08 /* SnapshotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapshotViewController.m; sourceTree = "<group>"; };
+		DE9EB2DD2339E75500841C58 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		DE9EB2DE2339E75500841C58 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		DEBAD0601DAF516A0006CA28 /* MyScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollViewController.h; sourceTree = "<group>"; };
 		DEBAD0611DAF516A0006CA28 /* MyScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollViewController.m; sourceTree = "<group>"; };
 		DEBD20661D6AD03D0084AEBC /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -137,6 +155,8 @@
 		DEBD206A1D6AD3360084AEBC /* testModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testModel.m; sourceTree = "<group>"; };
 		DEDE65651D922AF1005BE223 /* SemaphoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaphoreViewController.h; sourceTree = "<group>"; };
 		DEDE65661D922AF1005BE223 /* SemaphoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SemaphoreViewController.m; sourceTree = "<group>"; };
+		DEE3F0642396413000CEF0BB /* WeakBlockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakBlockTest.h; sourceTree = "<group>"; };
+		DEE3F0652396413000CEF0BB /* WeakBlockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakBlockTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +184,7 @@
 				DE6157B8211323F1006CF725 /* NSString */,
 				DEDE65641D922AD7005BE223 /* semaphore */,
 				DE6157AE2112F33C006CF725 /* JSCore */,
+				DE9A9E3E2373EC1700AC1C08 /* Snapshot */,
 				DE9173C61D5344BE008A0925 /* AsyncDraw */,
 				DE06BE8C21183E23006334E7 /* Operation */,
 				DE6157BD21143478006CF725 /* React */,
@@ -175,6 +196,7 @@
 				DEBD20651D6AD02E0084AEBC /* BaseModel */,
 				DE4DF8DC1D66D93800A6AB11 /* FPS */,
 				DE06BE7F2117F49B006334E7 /* present */,
+				DE75B8FB230BC960006BA06E /* WKWebView */,
 				B840CF6C1D472DCC0092313E /* RunLoop */,
 				B81E2DCB1D24FDAB0084DD41 /* Products */,
 				DE6157B22112F3A1006CF725 /* Frameworks */,
@@ -193,6 +215,12 @@
 		B81E2DCC1D24FDAB0084DD41 /* LearnObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				DE3C5CF823839FAD00E1070F /* 2.png */,
+				DE9EB2DE2339E75500841C58 /* JSONKit.h */,
+				DE9EB2DD2339E75500841C58 /* JSONKit.m */,
+				DE2AA5662323A9D3009FF2E3 /* weibocn.cer */,
+				DE2AA5672323A9D3009FF2E3 /* weibocom.cer */,
+				DE88A7C5231CB13200C0B047 /* 1.png */,
 				DE5B20A421C0FABF00F0B351 /* Navigator */,
 				DE5B20A021C0E56C00F0B351 /* Invocation */,
 				DE514A421DD2FF7700D01983 /* Protocol */,
@@ -205,6 +233,8 @@
 				B81E2DCD1D24FDAB0084DD41 /* Supporting Files */,
 				DE979C0420EB68A10048EE29 /* ExternTest.h */,
 				DE979C0520EB68A10048EE29 /* ExternTest.m */,
+				DEE3F0642396413000CEF0BB /* WeakBlockTest.h */,
+				DEE3F0652396413000CEF0BB /* WeakBlockTest.m */,
 			);
 			path = "LearnObjective-C";
 			sourceTree = "<group>";
@@ -389,6 +419,15 @@
 			path = React;
 			sourceTree = "<group>";
 		};
+		DE75B8FB230BC960006BA06E /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				DE75B8FC230BC9BF006BA06E /* WKWebViewController.h */,
+				DE75B8FD230BC9BF006BA06E /* WKWebViewController.m */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
 		DE9173C61D5344BE008A0925 /* AsyncDraw */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +448,15 @@
 				DE8DD8241D9E07D40076821F /* test1.png */,
 			);
 			path = CoreText;
+			sourceTree = "<group>";
+		};
+		DE9A9E3E2373EC1700AC1C08 /* Snapshot */ = {
+			isa = PBXGroup;
+			children = (
+				DE9A9E3F2373EC2E00AC1C08 /* SnapshotViewController.h */,
+				DE9A9E402373EC2E00AC1C08 /* SnapshotViewController.m */,
+			);
+			path = Snapshot;
 			sourceTree = "<group>";
 		};
 		DEBAD05F1DAF514F0006CA28 /* ScrollView */ = {
@@ -483,6 +531,7 @@
 				TargetAttributes = {
 					B81E2DC91D24FDAB0084DD41 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 38Y9CH359W;
 					};
 				};
 			};
@@ -491,6 +540,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -509,11 +559,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2AA5682323A9D3009FF2E3 /* weibocn.cer in Resources */,
+				DE88A7C6231CB13200C0B047 /* 1.png in Resources */,
 				DE3350E621B4F48C00AED4F4 /* page.js in Resources */,
 				DE624B011D9A5991006C4B94 /* analysisdata.json in Resources */,
 				DE2AC4BA1D99175400A38F93 /* performsdata.json in Resources */,
 				B81E2DDA1D24FDAB0084DD41 /* Assets.xcassets in Resources */,
+				DE3C5CF923839FAD00E1070F /* 2.png in Resources */,
 				DE6157B721130268006CF725 /* index.html in Resources */,
+				DE2AA5692323A9D3009FF2E3 /* weibocom.cer in Resources */,
 				DE8DD8251D9E07D40076821F /* test1.png in Resources */,
 				DE3350E821B4F49B00AED4F4 /* service.js in Resources */,
 				DE624B201D9CF9C1006C4B94 /* test.png in Resources */,
@@ -577,6 +631,7 @@
 			files = (
 				B81E2DD21D24FDAB0084DD41 /* AppDelegate.m in Sources */,
 				DE9173CC1D534894008A0925 /* AsyncView.m in Sources */,
+				DE9EB2DF2339E75500841C58 /* JSONKit.m in Sources */,
 				DE514A481DD3009300D01983 /* MyObject.m in Sources */,
 				DE06BE9321184044006334E7 /* MyOperation.m in Sources */,
 				DE58A2441D5984A600F78879 /* ThreadViewController.m in Sources */,
@@ -585,11 +640,13 @@
 				DEBAD0621DAF516A0006CA28 /* MyScrollViewController.m in Sources */,
 				DE6157C021143483006CF725 /* ReactViewController.m in Sources */,
 				DE06BE882117FBE2006334E7 /* WBNaviTransition.m in Sources */,
+				DE75B8FE230BC9BF006BA06E /* WKWebViewController.m in Sources */,
 				DE1BC34B1D814B0D007E7FA2 /* ADBannaer.m in Sources */,
 				DE1BC3411D814708007E7FA2 /* HeaderContext.m in Sources */,
 				DEBD20681D6AD03D0084AEBC /* BaseModel.m in Sources */,
 				DE514A451DD2FF8400D01983 /* ProtocolViewController.m in Sources */,
 				DEDE65671D922AF1005BE223 /* SemaphoreViewController.m in Sources */,
+				DE9A9E412373EC2E00AC1C08 /* SnapshotViewController.m in Sources */,
 				DE06BE9621184053006334E7 /* MyRequest.m in Sources */,
 				DE624B0F1D9BCEE5006C4B94 /* CoreTextViewController.m in Sources */,
 				B86B423B1D4243C6007F1053 /* DrawViewController.m in Sources */,
@@ -597,6 +654,7 @@
 				DE06BE7B2117EE5B006334E7 /* CustomView.m in Sources */,
 				DE5B20A721C0FAD100F0B351 /* NavigatorViewController.m in Sources */,
 				DE06BE8F21183E34006334E7 /* OperationViewController.m in Sources */,
+				DEE3F0662396413000CEF0BB /* WeakBlockTest.m in Sources */,
 				B81E2DE81D24FEDA0084DD41 /* MainViewController.m in Sources */,
 				DE3350E421B4F43700AED4F4 /* JSContextViewController.m in Sources */,
 				DE6157B12112F34E006CF725 /* JSCoreViewController.m in Sources */,
@@ -704,6 +762,7 @@
 			baseConfigurationReference = 3079CFF14774FDA1E271E4D3 /* Pods-LearnObjective-C.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38Y9CH359W;
 				DHTEST = "\\@\\\"xxxxx\\\"";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -724,6 +783,7 @@
 			baseConfigurationReference = C85EB788C035C93B344FDF41 /* Pods-LearnObjective-C.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38Y9CH359W;
 				DHTEST = "\\@\\\"xxxxx\\\"";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

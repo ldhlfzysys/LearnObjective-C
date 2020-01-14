@@ -76,13 +76,11 @@
         CGContextTranslateCTM(context, rect.origin.x, -rect.origin.y);
     }
     
-    if (self.backgroundColor &&
-        self.backgroundColor != [UIColor clearColor])
-    {
-        CGContextSetFillColorWithColor(context, self.backgroundColor.CGColor);
-        CGContextFillRect(context, rect);
-    }
+    CGContextSetFillColorWithColor(context, self.backgroundColor.CGColor);
+    CGContextFillRect(context, rect);
+    
     [self drawInRect:rect Context:context];
+    
     CGContextRestoreGState(context);
     
     if(true)//所有绘制完成
@@ -95,7 +93,7 @@
             layer.contents = (id)image.CGImage;
         });
     }
-    
+    UIGraphicsEndImageContext();
 }
 
 

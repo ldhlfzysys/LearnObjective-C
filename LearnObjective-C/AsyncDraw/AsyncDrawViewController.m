@@ -8,6 +8,19 @@
 
 #import "AsyncDrawViewController.h"
 
+@interface WBImage : UIImage
+
+@end
+@implementation WBImage
+
+-(void)drawInRect:(CGRect)rect
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [super drawInRect:rect];
+}
+
+@end
+
 @implementation TestAsyncDrawView
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -18,13 +31,36 @@
     return self;
 }
 
+-(void)drawRect:(CGRect)rect
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    UIGraphicsBeginImageContextWithOptions(self.frame.size, self.isOpaque, 1);
+    CGContextRef context2 = UIGraphicsGetCurrentContext();
+    
+    WBImage *image = [[WBImage alloc] initWithCGImage:[UIImage imageNamed:@"test.png"].CGImage];
+
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        [image drawInRect:CGRectMake(100, 0, 30, 30)];
+//        CGContextDrawImage(context, CGRectMake(100, 0, 30, 30), image.CGImage);
+        UIGraphicsEndImageContext();
+    });
+    
+    
+}
+
 -(BOOL)drawInRect:(CGRect)rect Context:(CGContextRef)context
 {
-    NSMutableAttributedString *string = [[NSMutableAttributedString alloc]initWithString:self.testStr];
-    [string addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:12] range:NSMakeRange(0, string.length)];
-    [string drawInRect:CGRectMake(0, 0, 100, 50)];
-    sleep(2);
-    
+    CGContextRef contextnew = UIGraphicsGetCurrentContext();
+    WBImage *image = [[WBImage alloc] initWithCGImage:[UIImage imageNamed:@"test.png"].CGImage];
+//    [image drawInRect:CGRectMake(0, 0, 30, 30)];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [image drawInRect:CGRectMake(100, 0, 30, 30)];
+        UIImageView *imagev = [[UIImageView alloc] initWithFrame:CGRectMake(100,0,30, 30)];
+        [imagev setImage:image];
+//        [self addSubview:imagev];
+    });
+//    CGContextDrawImage(context, CGRectMake(100, 0, 30, 30), image.CGImage);
     return YES;
 }
 
@@ -34,7 +70,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return 1;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -48,6 +84,7 @@
     TestAsyncDrawView *view = [[TestAsyncDrawView alloc]initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 50)];
     view.backgroundColor = [UIColor grayColor];
     [cell addSubview:view];
+//    [view setNeedsDisplay];
     return cell;
 }
 

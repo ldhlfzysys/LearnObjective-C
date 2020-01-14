@@ -30,10 +30,10 @@
     }
     
     //取消队列
-    for (int i = 0; i<10; i++) {
-        MyOperation *op = [self operationForUrl:[NSString stringWithFormat:@"%d",i]];
-        [op cancel];
-    }
+//    for (int i = 0; i<10; i++) {
+//        MyOperation *op = [self operationForUrl:[NSString stringWithFormat:@"%d",i]];
+//        [op cancel];
+//    }
     
     for (int i = 0; i<10; i++) {
         [self addRequest:[[MyRequest alloc]initWithUrl:[NSString stringWithFormat:@"%d",i]]];

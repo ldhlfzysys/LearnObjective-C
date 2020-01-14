@@ -18,6 +18,7 @@
 #import "ReactViewController.h"
 #import "CustomPresent.h"
 #import "NavigatorViewController.h"
+#import "JSONKit.h"
 #define kWBUserDefaultsKey  @"kWBUserDefaultsKey"
 extern int ctest();
 static dispatch_queue_t wb_user_defaults_queue;
@@ -42,15 +43,7 @@ static dispatch_queue_t mqueue;
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    _interactivePush = [CustomPresent interactiveTransitionWithTransitionType:WBInteractiveTransitionTypePresent GestureDirection:WBInteractiveTransitionGestureDirectionUp];
-    typeof(self)weakSelf = self;
-    _interactivePush.presentConifg = ^(){
-//        [weakSelf present];
-    };
-    [_interactivePush addPanGestureForViewController:self.navigationController];
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
-    [self test:dict];
-    [dict setObject:@"aa" forKey:@"aa"];
+    
 }
 
 - (void)test:(NSMutableDictionary *)dict
@@ -60,21 +53,23 @@ static dispatch_queue_t mqueue;
     });
 }
 
-
+#define wbox(a) @"aaa"#a
 -(instancetype)init
 {
     if (self = [super init]) {
-        mControllers = [NSArray arrayWithObjects:@"Navigator",@"Invocation",@"JSContext",@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol",@"JSCore",@"NSString",@"React",@"Operation", nil];
+        mControllers = [NSArray arrayWithObjects:@"Snapshot",@"WKWeb",@"Navigator",@"Invocation",@"JSContext",@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol",@"JSCore",@"NSString",@"React",@"Operation", nil];
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"LearnObjective-C";
-    
         
+        NSString *scheme = @"sinaweibo://wbox?id=123&page=pages/ab/ab&uicode=123";
+        NSURL *url = [NSURL URLWithString:scheme];
+        
+        NSURLComponents *components = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
+        NSLog(@"a");
     }
     return self;
 }
-- (void)test{
-    NSLog(@"aaaaa");
-}
+
 
 
 //动态方法解析
