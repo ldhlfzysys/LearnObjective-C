@@ -57,7 +57,7 @@ static dispatch_queue_t mqueue;
 -(instancetype)init
 {
     if (self = [super init]) {
-        mControllers = [NSArray arrayWithObjects:@"Snapshot",@"WKWeb",@"Navigator",@"Invocation",@"JSContext",@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol",@"JSCore",@"NSString",@"React",@"Operation", nil];
+        mControllers = [NSArray arrayWithObjects:@"Snapshot",@"WKWeb",@"Navigator",@"Invocation",@"JSContext",@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol",@"JSCore",@"NSString",@"React",@"Operation",@"LifeCycle", nil];
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"LearnObjective-C";
         
