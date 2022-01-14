@@ -25,13 +25,14 @@ static dispatch_queue_t wb_user_defaults_queue;
 static dispatch_queue_t test_queue;
 
 @interface MainViewController()<WBPresentedOneControllerDelegate>{
-    
+    EAGLContext *_context;
 }
 @property (nonatomic, strong) CustomPresent *interactivePush;
 
 @property (nonatomic,strong) NSMutableArray *arr;
 @property (nonatomic,assign) NSInteger testcount;
 @property (nonatomic,strong)NSTimer *timer;
+
 @end
 
 static dispatch_queue_t mqueue;
@@ -57,7 +58,7 @@ static dispatch_queue_t mqueue;
 -(instancetype)init
 {
     if (self = [super init]) {
-        mControllers = [NSArray arrayWithObjects:@"Snapshot",@"WKWeb",@"Navigator",@"Invocation",@"JSContext",@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol",@"JSCore",@"NSString",@"React",@"Operation",@"LifeCycle", nil];
+        mControllers = [NSArray arrayWithObjects:@"EAGL",@"Snapshot",@"WKWeb",@"Navigator",@"Invocation",@"JSContext",@"NSPredicate",@"Draw",@"RunLoop",@"AsyncDraw",@"Thread",@"Semaphore",@"FeedPerforms",@"CoreText",@"MyScroll",@"Protocol",@"JSCore",@"NSString",@"React",@"Operation",@"LifeCycle", nil];
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"LearnObjective-C";
         
@@ -67,6 +68,7 @@ static dispatch_queue_t mqueue;
         NSURLComponents *components = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
         NSLog(@"a");
     }
+    
     return self;
 }
 

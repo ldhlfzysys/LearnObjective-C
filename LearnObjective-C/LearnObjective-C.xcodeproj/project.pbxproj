@@ -49,6 +49,7 @@
 		DE624B0F1D9BCEE5006C4B94 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE624B0E1D9BCEE5006C4B94 /* CoreTextViewController.m */; };
 		DE624B201D9CF9C1006C4B94 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = DE624B1F1D9CF9C1006C4B94 /* test.png */; };
 		DE75B8FE230BC9BF006BA06E /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE75B8FD230BC9BF006BA06E /* WKWebViewController.m */; };
+		DE7FEADB2745E21400C7A94F /* EAGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FEADA2745E21400C7A94F /* EAGLViewController.m */; };
 		DE88A7C6231CB13200C0B047 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DE88A7C5231CB13200C0B047 /* 1.png */; };
 		DE8DD8251D9E07D40076821F /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = DE8DD8241D9E07D40076821F /* test1.png */; };
 		DE9173C91D5344DF008A0925 /* AsyncDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9173C81D5344DF008A0925 /* AsyncDrawViewController.m */; };
@@ -137,6 +138,8 @@
 		DE624B1F1D9CF9C1006C4B94 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		DE75B8FC230BC9BF006BA06E /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		DE75B8FD230BC9BF006BA06E /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		DE7FEAD92745E21400C7A94F /* EAGLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLViewController.h; sourceTree = "<group>"; };
+		DE7FEADA2745E21400C7A94F /* EAGLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLViewController.m; sourceTree = "<group>"; };
 		DE88A7C5231CB13200C0B047 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		DE8DD8241D9E07D40076821F /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
 		DE9173C71D5344DF008A0925 /* AsyncDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncDrawViewController.h; sourceTree = "<group>"; };
@@ -215,6 +218,7 @@
 		B81E2DCC1D24FDAB0084DD41 /* LearnObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				DE7FEAD82745E20100C7A94F /* EAGL */,
 				DE6084522711692900B23489 /* LifeCycle */,
 				DE3C5CF823839FAD00E1070F /* 2.png */,
 				DE9EB2DE2339E75500841C58 /* JSONKit.h */,
@@ -436,6 +440,15 @@
 			path = WKWebView;
 			sourceTree = "<group>";
 		};
+		DE7FEAD82745E20100C7A94F /* EAGL */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FEAD92745E21400C7A94F /* EAGLViewController.h */,
+				DE7FEADA2745E21400C7A94F /* EAGLViewController.m */,
+			);
+			path = EAGL;
+			sourceTree = SOURCE_ROOT;
+		};
 		DE9173C61D5344BE008A0925 /* AsyncDraw */ = {
 			isa = PBXGroup;
 			children = (
@@ -620,6 +633,7 @@
 				DE6157C021143483006CF725 /* ReactViewController.m in Sources */,
 				DE06BE882117FBE2006334E7 /* WBNaviTransition.m in Sources */,
 				DE75B8FE230BC9BF006BA06E /* WKWebViewController.m in Sources */,
+				DE7FEADB2745E21400C7A94F /* EAGLViewController.m in Sources */,
 				DE1BC34B1D814B0D007E7FA2 /* ADBannaer.m in Sources */,
 				DE1BC3411D814708007E7FA2 /* HeaderContext.m in Sources */,
 				DEBD20681D6AD03D0084AEBC /* BaseModel.m in Sources */,
@@ -741,6 +755,7 @@
 			baseConfigurationReference = 3079CFF14774FDA1E271E4D3 /* Pods-LearnObjective-C.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 38Y9CH359W;
 				DHTEST = "\\@\\\"xxxxx\\\"";
 				HEADER_SEARCH_PATHS = (

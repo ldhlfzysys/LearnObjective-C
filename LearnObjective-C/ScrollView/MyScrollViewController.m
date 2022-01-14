@@ -98,7 +98,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100;
+    return 300;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -114,7 +114,16 @@
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"test"];
     }
+    
     cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+    
+    NSString *a = @"LearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorderLearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorderLearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorderLearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorderLearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorderLearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorderLearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorderLearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorderLearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorderLearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorderLearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorderLearnObjective-C(45807,0x103700580) malloc: recording malloc and VM allocation stacks to disk using standard recorder";
+    
+    for (int i = 0 ; i < 1000; i++) {
+        [a boundingRectWithSize:CGSizeMake(100, 50) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{} context:nil];
+    }
+    
+    
     return cell;
 }
 
